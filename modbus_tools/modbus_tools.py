@@ -7,6 +7,7 @@ import struct
 from typing import Any, Dict, List, cast
 from numpy import true_divide
 from pyModbusTCP.client import ModbusClient
+import pkg_resources
 
 # enum for metter_types
 class MetterTypes(Enum):
@@ -59,10 +60,14 @@ class ModbusConfig:
         self.__slave = modbus_info['slave']
         self.__metter_type = modbus_info['metter_type']
 
-        path = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'registers\\{self.__metter_type}.json')
-        with open(path) as f:
-            self.__registers = json.load(f)
-        pass
+        stream = pkg_resources.resource_stream(__name__, f'data/{self.__metter_type}.json')
+        json_string = stream.read().decode()
+        self.__registers = json.load(json_string)
+        
+        # path = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'registers\\{self.__metter_type}.json')
+        # with open(path) as f:
+        #     self.__registers = json.load(f)
+        # pass
 
     def __init__(self, path_to_json):
         self.__host = "default"
