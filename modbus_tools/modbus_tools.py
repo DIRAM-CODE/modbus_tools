@@ -202,7 +202,7 @@ class JsonModbusClient_R(ModbusClient):
 
     #     return RegReadResponse(register_info['name'], register_info['unit'], value)
 
-    def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
+    def read_from_json(self, jlist: list[dict]) -> list[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
         Args:
@@ -459,12 +459,12 @@ def JsonModbus_ReadManager(modbus_client_r:JsonModbusClient_R, registers:list, c
         List[RegReadResponse]: Lista de valores de lectura de registros
     """
     output = []
-    for register in registers:
+    for register_group in registers:
         for i in range(counter):
             # if env.UPDATE_NOW_FLAG:
             #     break
             # time.sleep(0.5)
-            response = modbus_client_r.read_from_json(register)
+            response = modbus_client_r.read_from_json(register_group)
             if response != None:
 
                 # print readed registers in a 'human readable' list
