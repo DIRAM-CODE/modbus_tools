@@ -1,0 +1,2058 @@
+[
+ {
+   "name": "Frequency_Frequency__1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "Hz",
+   "start_reg": 5255,
+   "index": 1
+ },
+ {
+   "name": "V__L_N_Voltage_0",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5257,
+   "index": 2
+ },
+ {
+   "name": "V__L_N_Voltage_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5259,
+   "index": 3
+ },
+ {
+   "name": "V__L_N_Voltage_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5261,
+   "index": 4
+ },
+ {
+   "name": "V__L_N_Voltage_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5263,
+   "index": 5
+ },
+ {
+   "name": "V__L_N_Voltage_Avg",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5265,
+   "index": 6
+ },
+ {
+   "name": "V__L_L_Voltage__L_L_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5267,
+   "index": 7
+ },
+ {
+   "name": "V__L_L_Voltage__L_L_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5269,
+   "index": 8
+ },
+ {
+   "name": "V__L_L_Voltage__L_L_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5271,
+   "index": 9
+ },
+ {
+   "name": "V__L_L_Voltage__L_L_AvgDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "V",
+   "start_reg": 5273,
+   "index": 10
+ },
+ {
+   "name": "MAIN_I_Current_0",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5275,
+   "index": 11
+ },
+ {
+   "name": "MAIN_I_Current_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5277,
+   "index": 12
+ },
+ {
+   "name": "MAIN_I_Current_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5279,
+   "index": 13
+ },
+ {
+   "name": "MAIN_I_Current_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5281,
+   "index": 14
+ },
+ {
+   "name": "MAIN_I_Current_Avg",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5283,
+   "index": 15
+ },
+ {
+   "name": "CAPS_I_Current_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5285,
+   "index": 16
+ },
+ {
+   "name": "CAPS_I_Current_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5287,
+   "index": 17
+ },
+ {
+   "name": "CAPS_I_Current_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5289,
+   "index": 18
+ },
+ {
+   "name": "CAPS_I_Current_Avg",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5291,
+   "index": 19
+ },
+ {
+   "name": "LOAD_I_Current_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5293,
+   "index": 20
+ },
+ {
+   "name": "LOAD_I_Current_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5295,
+   "index": 21
+ },
+ {
+   "name": "LOAD_I_Current_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5297,
+   "index": 22
+ },
+ {
+   "name": "LOAD_I_Current_Avg",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A",
+   "start_reg": 5299,
+   "index": 23
+ },
+ {
+   "name": "MAIN_P_Active_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5317,
+   "index": 24
+ },
+ {
+   "name": "MAIN_P_Active_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5319,
+   "index": 25
+ },
+ {
+   "name": "MAIN_P_Active_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5321,
+   "index": 26
+ },
+ {
+   "name": "MAIN_P_Active_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5323,
+   "index": 27
+ },
+ {
+   "name": "MAIN_P_Active_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5325,
+   "index": 28
+ },
+ {
+   "name": "MAIN_P_Active_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5327,
+   "index": 29
+ },
+ {
+   "name": "MAIN_P_Active_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5329,
+   "index": 30
+ },
+ {
+   "name": "MAIN_P_Active_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5331,
+   "index": 31
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5333,
+   "index": 32
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5335,
+   "index": 33
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5337,
+   "index": 34
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5339,
+   "index": 35
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5341,
+   "index": 36
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5343,
+   "index": 37
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5345,
+   "index": 38
+ },
+ {
+   "name": "MAIN_Q_Reactive_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5347,
+   "index": 39
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5349,
+   "index": 40
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5351,
+   "index": 41
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5353,
+   "index": 42
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5355,
+   "index": 43
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5357,
+   "index": 44
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5359,
+   "index": 45
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5361,
+   "index": 46
+ },
+ {
+   "name": "MAIN_S_Apparent_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5363,
+   "index": 47
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5381,
+   "index": 48
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5383,
+   "index": 49
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5385,
+   "index": 50
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5387,
+   "index": 51
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5389,
+   "index": 52
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5391,
+   "index": 53
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5393,
+   "index": 54
+ },
+ {
+   "name": "CAPS_Q_Reactive_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5395,
+   "index": 55
+ },
+ {
+   "name": "LOAD_P_Active_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5413,
+   "index": 56
+ },
+ {
+   "name": "LOAD_P_Active_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5415,
+   "index": 57
+ },
+ {
+   "name": "LOAD_P_Active_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5417,
+   "index": 58
+ },
+ {
+   "name": "LOAD_P_Active_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5419,
+   "index": 59
+ },
+ {
+   "name": "LOAD_P_Active_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5421,
+   "index": 60
+ },
+ {
+   "name": "LOAD_P_Active_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5423,
+   "index": 61
+ },
+ {
+   "name": "LOAD_P_Active_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5425,
+   "index": 62
+ },
+ {
+   "name": "LOAD_P_Active_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "W",
+   "start_reg": 5427,
+   "index": 63
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5429,
+   "index": 64
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5431,
+   "index": 65
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5433,
+   "index": 66
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5435,
+   "index": 67
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5437,
+   "index": 68
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5439,
+   "index": 69
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5441,
+   "index": 70
+ },
+ {
+   "name": "LOAD_Q_Reactive_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5443,
+   "index": 71
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5445,
+   "index": 72
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5447,
+   "index": 73
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5449,
+   "index": 74
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_Sum",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5451,
+   "index": 75
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5453,
+   "index": 76
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5455,
+   "index": 77
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5457,
+   "index": 78
+ },
+ {
+   "name": "LOAD_S_Apparent_Power_SumDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VA",
+   "start_reg": 5459,
+   "index": 79
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5461,
+   "index": 80
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5463,
+   "index": 81
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5465,
+   "index": 82
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_Avg",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5467,
+   "index": 83
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5477,
+   "index": 84
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5479,
+   "index": 85
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5481,
+   "index": 86
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_Avg",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5483,
+   "index": 87
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5485,
+   "index": 88
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5487,
+   "index": 89
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5489,
+   "index": 90
+ },
+ {
+   "name": "MAIN_PF_Power_Factor_AvgDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5491,
+   "index": 91
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5501,
+   "index": 92
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5503,
+   "index": 93
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5505,
+   "index": 94
+ },
+ {
+   "name": "LOAD_PF_Power_Factor_AvgDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5507,
+   "index": 95
+ },
+ {
+   "name": "V_THD__L_N_Voltage_THD__L_N_0",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5509,
+   "index": 96
+ },
+ {
+   "name": "V_THD__L_N_Voltage_THD__L_N_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5511,
+   "index": 97
+ },
+ {
+   "name": "V_THD__L_N_Voltage_THD__L_N_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5513,
+   "index": 98
+ },
+ {
+   "name": "V_THD__L_N_Voltage_THD__L_N_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5515,
+   "index": 99
+ },
+ {
+   "name": "V_THD__L_N_Voltage_THD__L_N_Max",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5517,
+   "index": 100
+ },
+ {
+   "name": "V_THD__L_L_Voltage_THD__L_L_12",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5519,
+   "index": 101
+ },
+ {
+   "name": "V_THD__L_L_Voltage_THD__L_L_23",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5521,
+   "index": 102
+ },
+ {
+   "name": "V_THD__L_L_Voltage_THD__L_L_31",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5523,
+   "index": 103
+ },
+ {
+   "name": "V_THD__L_L_Voltage_THD__L_L_MaxDif",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5525,
+   "index": 104
+ },
+ {
+   "name": "MAIN_I_THD_Current_THD_0",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5527,
+   "index": 105
+ },
+ {
+   "name": "MAIN_I_THD_Current_THD_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5529,
+   "index": 106
+ },
+ {
+   "name": "MAIN_I_THD_Current_THD_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5531,
+   "index": 107
+ },
+ {
+   "name": "MAIN_I_THD_Current_THD_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5533,
+   "index": 108
+ },
+ {
+   "name": "MAIN_I_THD_Current_THD_Max",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5535,
+   "index": 109
+ },
+ {
+   "name": "CAPS_I_THD_Current_THD_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5537,
+   "index": 110
+ },
+ {
+   "name": "CAPS_I_THD_Current_THD_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5539,
+   "index": 111
+ },
+ {
+   "name": "CAPS_I_THD_Current_THD_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5541,
+   "index": 112
+ },
+ {
+   "name": "CAPS_I_THD_Current_THD_Max",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5543,
+   "index": 113
+ },
+ {
+   "name": "LOAD_I_THD_Current_THD_1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5545,
+   "index": 114
+ },
+ {
+   "name": "LOAD_I_THD_Current_THD_2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5547,
+   "index": 115
+ },
+ {
+   "name": "LOAD_I_THD_Current_THD_3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5549,
+   "index": 116
+ },
+ {
+   "name": "LOAD_I_THD_Current_THD_Max",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "",
+   "start_reg": 5551,
+   "index": 117
+ },
+ {
+   "name": "FAULt",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5599,
+   "index": 118
+ },
+ {
+   "name": "ALARM",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5601,
+   "index": 119
+ },
+ {
+   "name": "CONNECTED_CAPS",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5603,
+   "index": 120
+ },
+ {
+   "name": "PARAM_CHANGED",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5605,
+   "index": 121
+ },
+ {
+   "name": "MANUAL_CONNECTED_STEPS",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5607,
+   "index": 122
+ },
+ {
+   "name": "ACTIVE_FULL_TESt",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5609,
+   "index": 123
+ },
+ {
+   "name": "SYSTEM_STATUS",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5611,
+   "index": 124
+ },
+ {
+   "name": "SERIAL_NUMBER",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5613,
+   "index": 125
+ },
+ {
+   "name": "VERSION_NUMBER",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5615,
+   "index": 126
+ },
+ {
+   "name": "PRODUCT_CODE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5617,
+   "index": 127
+ },
+ {
+   "name": "CHECKSUM",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5619,
+   "index": 128
+ },
+ {
+   "name": "CONNECTED_KVAR",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5621,
+   "index": 129
+ },
+ {
+   "name": "COMPENSATION_PERCENt",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "%",
+   "start_reg": 5623,
+   "index": 130
+ },
+ {
+   "name": "NUMBER_OF_STEPS",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5625,
+   "index": 131
+ },
+ {
+   "name": "STEP_SIZE",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "VAr",
+   "start_reg": 5627,
+   "index": 132
+ },
+ {
+   "name": "NUMBERS_OF_STEPS_AVAILABLE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5629,
+   "index": 133
+ },
+ {
+   "name": "OPERATION_MODE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5631,
+   "index": 134
+ },
+ {
+   "name": "COMPENSATION_MODE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5633,
+   "index": 135
+ },
+ {
+   "name": "TARGET_KVAR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "kVAr",
+   "start_reg": 5635,
+   "index": 136
+ },
+ {
+   "name": "TARGET_TAN_INDEX",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5637,
+   "index": 137
+ },
+ {
+   "name": "INHIBIT_SIGNAL_ENABLE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5639,
+   "index": 138
+ },
+ {
+   "name": "GRID_DROP_DELAY",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5641,
+   "index": 139
+ },
+ {
+   "name": "VOLTAGE_CONTROL_ENABLE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5643,
+   "index": 140
+ },
+ {
+   "name": "MAX_SAFE_VOLTAGE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "V",
+   "start_reg": 5645,
+   "index": 141
+ },
+ {
+   "name": "START_UPPER_VOLTAGE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "V",
+   "start_reg": 5647,
+   "index": 142
+ },
+ {
+   "name": "STOP_UPPER_VOLTAGE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "V",
+   "start_reg": 5649,
+   "index": 143
+ },
+ {
+   "name": "STOP_LOWER_VOLTAGE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "V",
+   "start_reg": 5651,
+   "index": 144
+ },
+ {
+   "name": "START_LOWER_VOLTAGE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "V",
+   "start_reg": 5653,
+   "index": 145
+ },
+ {
+   "name": "GRID_DROP_VOLTAGE",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "V",
+   "start_reg": 5655,
+   "index": 146
+ },
+ {
+   "name": "TARGET_VOLTAGE_PERCENt",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "%",
+   "start_reg": 5657,
+   "index": 147
+ },
+ {
+   "name": "ERROR3_FAULT_DETECTION",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5659,
+   "index": 148
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5663,
+   "index": 149
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5665,
+   "index": 150
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5667,
+   "index": 151
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5669,
+   "index": 152
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5671,
+   "index": 153
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5673,
+   "index": 154
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5675,
+   "index": 155
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5677,
+   "index": 156
+ },
+ {
+   "name": "GROUP1_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5679,
+   "index": 157
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5681,
+   "index": 158
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5683,
+   "index": 159
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5685,
+   "index": 160
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5687,
+   "index": 161
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5689,
+   "index": 162
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5691,
+   "index": 163
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5693,
+   "index": 164
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5695,
+   "index": 165
+ },
+ {
+   "name": "GROUP2_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5697,
+   "index": 166
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5699,
+   "index": 167
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5701,
+   "index": 168
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5703,
+   "index": 169
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5705,
+   "index": 170
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5707,
+   "index": 171
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5709,
+   "index": 172
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5711,
+   "index": 173
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5713,
+   "index": 174
+ },
+ {
+   "name": "GROUP3_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5715,
+   "index": 175
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5717,
+   "index": 176
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5719,
+   "index": 177
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5721,
+   "index": 178
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5723,
+   "index": 179
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5725,
+   "index": 180
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5727,
+   "index": 181
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5729,
+   "index": 182
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5731,
+   "index": 183
+ },
+ {
+   "name": "GROUP4_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5733,
+   "index": 184
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5735,
+   "index": 185
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5737,
+   "index": 186
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5739,
+   "index": 187
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5741,
+   "index": 188
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5743,
+   "index": 189
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5745,
+   "index": 190
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5747,
+   "index": 191
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5749,
+   "index": 192
+ },
+ {
+   "name": "GROUP5_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5751,
+   "index": 193
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5753,
+   "index": 194
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5755,
+   "index": 195
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5757,
+   "index": 196
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5759,
+   "index": 197
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5761,
+   "index": 198
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5763,
+   "index": 199
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5765,
+   "index": 200
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5767,
+   "index": 201
+ },
+ {
+   "name": "GROUP6_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5769,
+   "index": 202
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5771,
+   "index": 203
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5773,
+   "index": 204
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5775,
+   "index": 205
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5777,
+   "index": 206
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5779,
+   "index": 207
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5781,
+   "index": 208
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5783,
+   "index": 209
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5785,
+   "index": 210
+ },
+ {
+   "name": "GROUP7_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5787,
+   "index": 211
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5789,
+   "index": 212
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5791,
+   "index": 213
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5793,
+   "index": 214
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5795,
+   "index": 215
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5797,
+   "index": 216
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5799,
+   "index": 217
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5801,
+   "index": 218
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5803,
+   "index": 219
+ },
+ {
+   "name": "GROUP8_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5805,
+   "index": 220
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5807,
+   "index": 221
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5809,
+   "index": 222
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5811,
+   "index": 223
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5813,
+   "index": 224
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5815,
+   "index": 225
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5817,
+   "index": 226
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5819,
+   "index": 227
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5821,
+   "index": 228
+ },
+ {
+   "name": "GROUP9_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5823,
+   "index": 229
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5825,
+   "index": 230
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5827,
+   "index": 231
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5829,
+   "index": 232
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5831,
+   "index": 233
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5833,
+   "index": 234
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5835,
+   "index": 235
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5837,
+   "index": 236
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5839,
+   "index": 237
+ },
+ {
+   "name": "GROUP10_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5841,
+   "index": 238
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5843,
+   "index": 239
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5845,
+   "index": 240
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5847,
+   "index": 241
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5849,
+   "index": 242
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5851,
+   "index": 243
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5853,
+   "index": 244
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5855,
+   "index": 245
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5857,
+   "index": 246
+ },
+ {
+   "name": "GROUP11_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5859,
+   "index": 247
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_L1_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5861,
+   "index": 248
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_L1",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5863,
+   "index": 249
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_L2_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5865,
+   "index": 250
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_L2",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5867,
+   "index": 251
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_L3_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5869,
+   "index": 252
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_L3",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5871,
+   "index": 253
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_TOTAL_PU",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5873,
+   "index": 254
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_TOTAL",
+   "bytes2read": 4,
+   "type": "float",
+   "unit": "A.D.",
+   "start_reg": 5875,
+   "index": 255
+ },
+ {
+   "name": "GROUP12_TEST_REPORT_ERROR",
+   "bytes2read": 2,
+   "type": "int",
+   "unit": "A.D.",
+   "start_reg": 5877,
+   "index": 256
+ },
+ {
+   "name": "TIMESTAMP",
+   "bytes2read": 4,
+   "type": "int",
+   "unit": "",
+   "start_reg": 5879,
+   "index": 257
+ }
+]

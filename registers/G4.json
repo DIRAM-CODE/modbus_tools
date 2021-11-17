@@ -1,0 +1,461 @@
+[
+	{
+	  "name": "PRM_CODE_AVG_ACTIVE_POWER_MAIN_1",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2217,
+	  "descripcion": "Active power - average L1 (w), calculated every second",
+	  "index": 1
+	},
+	{
+	  "name": "PRM_CODE_AVG_ACTIVE_POWER_MAIN_2",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2219,
+	  "descripcion": "Active power - average L2 (w), calculated every second",
+	  "index": 2
+	},
+	{
+	  "name": "PRM_CODE_AVG_ACTIVE_POWER_MAIN_3",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2221,
+	  "descripcion": "Active power - average L3 (w), calculated every second",
+	  "index": 3
+	},
+	{
+	  "name": "PRM_CODE_AVG_ACTIVE_POWER_SUM",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2229,
+	  "descripcion": "Active power - total (w), calculated every second",
+	  "index": 4
+	},
+	{
+	  "name": "PRM_CODE_AVG_DSP_FREQUENCY",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2191,
+	  "descripcion": "Measured frequency average, calculated every 200 msec",
+	  "index": 5
+	},
+	{
+	  "name": "PRM_CODE_AVG_I3_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2301,
+	  "descripcion": "RMS current I3 - average (A), calculated every second",
+	  "index": 6
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_10SEC_FREQUENCY",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 5000,
+	  "descripcion": "Frequency over 10 seconds, calculated from 10/12 cycles intervals",
+	  "index": 7
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_I1_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3909,
+	  "descripcion": "Average THD I1 over 10/12 cycles",
+	  "index": 8
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_I2_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3911,
+	  "descripcion": "Average THD I2 over 10/12 cycles",
+	  "index": 9
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_I3_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3913,
+	  "descripcion": "Average THD I3 over 10/12 cycles",
+	  "index": 10
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_PF_FUNDAMENTAL_1",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3973,
+	  "descripcion": "Average fundamental power factor phase 1, calculated over 10/12 cycles",
+	  "index": 11
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_PF_FUNDAMENTAL_2",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3975,
+	  "descripcion": "Average fundamental power factor phase 2, calculated over 10/12 cycles",
+	  "index": 12
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_PF_FUNDAMENTAL_3",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3977,
+	  "descripcion": "Average fundamental power factor phase 3, calculated over 10/12 cycles",
+	  "index": 13
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_PF_FUNDAMENTAL_TOTAL",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3979,
+	  "descripcion": "Average fundamental total power factor, calculated over 10/12 cycles",
+	  "index": 14
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_POWER_FACTOR_1",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3965,
+	  "descripcion": "Average power factor phase 1, calculated over 10/12 cycles",
+	  "index": 15
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_POWER_FACTOR_2",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3967,
+	  "descripcion": "Average power factor phase 2, calculated over 10/12 cycles",
+	  "index": 16
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_POWER_FACTOR_3",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3969,
+	  "descripcion": "Average power factor phase 3, calculated over 10/12 cycles",
+	  "index": 17
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_V1_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3895,
+	  "descripcion": "Average THD V1 over 10/12 cycles",
+	  "index": 18
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_V12_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3901,
+	  "descripcion": "Average THD V12 over 10/12 cycles",
+	  "index": 19
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_V2_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3897,
+	  "descripcion": "Average THD V2 over 10/12 cycles",
+	  "index": 20
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_V23_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3903,
+	  "descripcion": "Average THD V23 over 10/12 cycles",
+	  "index": 21
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_V3_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3899,
+	  "descripcion": "Average THD V3 over 10/12 cycles",
+	  "index": 22
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_V31_THD",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3905,
+	  "descripcion": "Average THD V31 over 10/12 cycles",
+	  "index": 23
+	},
+	{
+	  "name": "PRM_CODE_AVG_LONG_POWER_FACTOR_TOTAL",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3971,
+	  "descripcion": "Average total power factor, calculated over 10/12 cycles",
+	  "index": 24
+	},
+	{
+	  "name": "PRM_CODE_LONG_PF_FUNDAMENTAL_1",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3483,
+	  "descripcion": "Fundamental Power factor phase 1, calculated over 10/12 cycles",
+	  "index": 25
+	},
+	{
+	  "name": "PRM_CODE_LONG_PF_FUNDAMENTAL_3",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3487,
+	  "descripcion": "Fundamental Power factor phase 3, calculated over 10/12 cycles",
+	  "index": 26
+	},
+	{
+	  "name": "PRM_CODE_LONG_PF_FUNDAMENTAL_TOTAL",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3489,
+	  "descripcion": "Fundamental Total Power factor, calculated over 10/12 cycles",
+	  "index": 27
+	},
+	{
+	  "name": "PRM_CODE_AVG_V1_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2283,
+	  "descripcion": "RMS Voltage V1 - average (v) calculated every second",
+	  "index": 28
+	},
+	{
+	  "name": "PRM_CODE_AVG_V2_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2285,
+	  "descripcion": "RMS Voltage V2 - average (v), calculated every second",
+	  "index": 29
+	},
+	{
+	  "name": "PRM_CODE_AVG_V3_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2287,
+	  "descripcion": "RMS Voltage V3 - average (v), calculated every second",
+	  "index": 30
+	},
+	{
+	  "name": "PRM_CODE_DSP_FREQUENCY_FAST",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 999,
+	  "descripcion": "The measured frequency , calculated every cycle",
+	  "index": 31
+	},
+	{
+	  "name": "PRM_CODE_AVG_V12_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2289,
+	  "descripcion": "RMS Voltage V12  - average (v), calculated every second",
+	  "index": 32
+	},
+	{
+	  "name": "PRM_CODE_LONG_I_NEGATIVE_UNBALANCE",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2598,
+	  "descripcion": "Negative sequence current, calculated every 10/12 cycles (v)",
+	  "index": 33
+	},
+	{
+	  "name": "PRM_CODE_LONG_I_POSITIVE_UNBALANCE",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2594,
+	  "descripcion": "Positive sequence Current, calculated every 10/12 cycles (v)",
+	  "index": 34
+	},
+	{
+	  "name": "PRM_CODE_LONG_I_ZERO_UNBALANCE",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2602,
+	  "descripcion": "Zero sequence Current, calculated every 10/12 cycles (A)",
+	  "index": 35
+	},
+	{
+	  "name": "PRM_CODE_AVG_V23_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2291,
+	  "descripcion": "RMS Voltage V23 - average (v), calculated every second",
+	  "index": 36
+	},
+	{
+	  "name": "PRM_CODE_AVG_V31_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2293,
+	  "descripcion": "RMS Voltage V31 - average (v), calculated every second",
+	  "index": 37
+	},
+	{
+	  "name": "PRM_CODE_AVG_I1_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2297,
+	  "descripcion": "RMS Voltage I1 - average (A), calculated every second",
+	  "index": 38
+	},
+	{
+	  "name": "PRM_CODE_AVG_I2_RMS",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2299,
+	  "descripcion": "RMS Voltage I2 - average (A), calculated every second",
+	  "index": 39
+	},
+	{
+	  "name": "PRM_CODE_LONG_POWER_FACTOR_1",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3475,
+	  "descripcion": "Power factor phase 1, calculated over 10/12 cycles",
+	  "index": 40
+	},
+	{
+	  "name": "PRM_CODE_LONG_PF_FUNDAMENTAL_2",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3485,
+	  "descripcion": "Power factor phase 2, calculated over 10/12 cycles",
+	  "index": 41
+	},
+	{
+	  "name": "PRM_CODE_LONG_POWER_FACTOR_2",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3477,
+	  "descripcion": "Power factor phase 2, calculated over 10/12 cycles",
+	  "index": 42
+	},
+	{
+	  "name": "PRM_CODE_LONG_POWER_FACTOR_3",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3479,
+	  "descripcion": "Power factor phase 3, calculated over 10/12 cycles",
+	  "index": 43
+	},
+	{
+	  "name": "PRM_CODE_LONG_V_POSITIVE_UNBALANCE",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2592,
+	  "descripcion": "Positive sequence Voltage, calculated every 10/12 cycles (v)",
+	  "index": 44
+	},
+	{
+	  "name": "PRM_CODE_LONG_V_NEGATIVE_UNBALANCE",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2596,
+	  "descripcion": "Negative sequence voltage, calculated every 10/12 cycles (v)",
+	  "index": 45
+	},
+	{
+	  "name": "PRM_CODE_LONG_V_ZERO_UNBALANCE",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2600,
+	  "descripcion": "Zero sequence Voltage, calculated every 10/12 cycles (v)",
+	  "index": 46
+	},
+	{
+	  "name": "PRM_CODE_AVG_REACTIVE_POWER_MAIN_1",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2233,
+	  "descripcion": "Reactive power - average L1 (VAr), calculated every second",
+	  "index": 47
+	},
+	{
+	  "name": "PRM_CODE_AVG_REACTIVE_POWER_MAIN_2",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2235,
+	  "descripcion": "Reactive power - average L2 (VAr), calculated every second",
+	  "index": 48
+	},
+	{
+	  "name": "PRM_CODE_AVG_REACTIVE_POWER_MAIN_3",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2237,
+	  "descripcion": "Reactive power - average L3 (VAr), calculated every second",
+	  "index": 49
+	},
+	{
+	  "name": "PRM_CODE_AVG_REACTIVE_POWER_SUM",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 2245,
+	  "descripcion": "Reactive power - total (VAr), calculated every second",
+	  "index": 50
+	},
+	{
+	  "name": "PRM_CODE_LONG_POWER_FACTOR_TOTAL",
+	  "bytes2read": 4,
+	  "type": "float",
+	  "unit": null,
+	  "start_reg": 3481,
+	  "descripcion": "Total Power factor, calculated over 10/12 cycles",
+	  "index": 51
+	}
+  ]

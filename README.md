@@ -1,0 +1,1 @@
+Libreria para trabajar con medidores ELSPEC y Modbus.
