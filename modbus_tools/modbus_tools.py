@@ -299,22 +299,22 @@ class JsonModbusClient_R(ModbusClient):
         # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
         return float_number
 
-    def ParseDouble(self, input) -> float:
-        """ Parses a response into a float
+    # def ParseDouble(self, input) -> float:
+    #     """ Parses a response into a float
 
-        Args:
-            input (register value): output from .read_input_registers()
+    #     Args:
+    #         input (register value): output from .read_input_registers()
 
-        Returns:
-            float: parsed float
-        """
-        str_input = f"{input:x}".ljust(16, '0')
-        bytes_input = bytes.fromhex(str_input)
+    #     Returns:
+    #         float: parsed float
+    #     """
+    #     str_input = f"{input:x}".ljust(16, '0')
+    #     bytes_input = bytes.fromhex(str_input)
 
-        float_number = struct.unpack('!d', bytes_input)[0]
+    #     float_number = struct.unpack('!d', bytes_input)[0]
 
-        # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
-        return float_number
+    #     # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
+    #     return float_number
 
     def read_G4_harmonics(self, modbus_code: int) -> list:
         """Funcion para leer los harmonicos medidos por un G4XX
