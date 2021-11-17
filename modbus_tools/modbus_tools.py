@@ -447,7 +447,7 @@ def optimize_read(registers_name: List[str], all_registers: List[dict], max_step
         start_reg = register
     return ret_list
 
-def JsonModbus_ReadManager(modbus_client_r, registers, counter=25):
+def JsonModbus_ReadManager(modbus_client_r:JsonModbusClient_R, registers:list, counter:int=25):
     """Lee multiples registros de modbus por bloques
 
     Args:
@@ -478,7 +478,7 @@ def JsonModbus_ReadManager(modbus_client_r, registers, counter=25):
 
     return output
 
-def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers:List, values:List, counter: int=25) -> dict:
+def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers:list, values:list, counter:int=25) -> dict:
     """Escribe multiples registros de modbus por bloques
 
     Args:
