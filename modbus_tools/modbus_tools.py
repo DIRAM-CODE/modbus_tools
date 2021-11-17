@@ -17,7 +17,7 @@ class MetterTypes(Enum):
     PBB = 'PBB'
 
 #%% from modbus_config
-class ModbusConfig():
+class ModbusConfig:
     """ Clase para definir la configuracion de cliente modbus
     """
 
