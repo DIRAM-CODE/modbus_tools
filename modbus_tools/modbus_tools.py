@@ -61,8 +61,8 @@ class ModbusConfig:
         self.__metter_type = modbus_info['metter_type']
 
         stream = pkg_resources.resource_stream(__name__, f'data/{self.__metter_type}.json')
-        json_string = stream.read().decode()
-        self.__registers = json.load(json_string)
+        # json_string = stream.read().decode()
+        self.__registers = json.load(stream)
         
         # path = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'registers\\{self.__metter_type}.json')
         # with open(path) as f:
