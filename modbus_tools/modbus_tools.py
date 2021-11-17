@@ -59,7 +59,7 @@ class ModbusConfig:
         self.__slave = modbus_info['slave']
         self.__metter_type = modbus_info['metter_type']
 
-        path = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'../registers/{self.__metter_type}.json')
+        path = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'registers\\{self.__metter_type}.json')
         with open(path) as f:
             self.__registers = json.load(f)
         pass
