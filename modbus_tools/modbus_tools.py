@@ -174,33 +174,33 @@ class JsonModbusClient_R(ModbusClient):
     """
 
     # Esta funcion no se usa actualmente
-    def read_single_register(self, register_info: dict) -> RegReadResponse:
-        """Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
+    # def read_single_register(self, register_info: dict) -> RegReadResponse:
+    #     """Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
-        Args:
-            register_info (dict): Información de registro de consulta
+    #     Args:
+    #         register_info (dict): Información de registro de consulta
 
-        Returns:
-            RegReadResponse: Respuesta de modbus en formato de registro
-        """
+    #     Returns:
+    #         RegReadResponse: Respuesta de modbus en formato de registro
+    #     """
 
-        # Register math (find first and last register)
-        start_read = register_info['start_reg']
-        # Number of registers to read
-        regs2read = int(register_info['bytes2read'] / 2)
+    #     # Register math (find first and last register)
+    #     start_read = register_info['start_reg']
+    #     # Number of registers to read
+    #     regs2read = int(register_info['bytes2read'] / 2)
 
-        if self.debug == False:
-            print(f"[modbus_tcp.py]: regs2read: {regs2read}")
+    #     if self.debug == False:
+    #         print(f"[modbus_tcp.py]: regs2read: {regs2read}")
 
-        # Leer registros
-        regs_resp = self.read_input_registers(start_read, regs2read)
+    #     # Leer registros
+    #     regs_resp = self.read_input_registers(start_read, regs2read)
 
-        if regs_resp is None:
-            return None
+    #     if regs_resp is None:
+    #         return None
 
-        value = self.ProcessResponse(regs_resp[0], register_info['type'])
+    #     value = self.ProcessResponse(regs_resp[0], register_info['type'])
 
-        return RegReadResponse(register_info['name'], register_info['unit'], value)
+    #     return RegReadResponse(register_info['name'], register_info['unit'], value)
 
     def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
@@ -374,38 +374,38 @@ class JsonModbusClient_RW(JsonModbusClient_R):
         return write_resp
 
     # Esta funcion no se usa actualmente
-    def write_from_json(self, jlist: List[dict], values: List) -> bool:
-        """Realiza escritura de varios registros modbus
+    # def write_from_json(self, jlist: List[dict], values: List) -> bool:
+    #     """Realiza escritura de varios registros modbus
 
-        Args:
-            jlist (List[dict]): lista de registros a escribir
-            values (List): valores a escribir (en el mismo orden que los registros jlist)
+    #     Args:
+    #         jlist (List[dict]): lista de registros a escribir
+    #         values (List): valores a escribir (en el mismo orden que los registros jlist)
 
-        Returns:
-            bool: array con true o false dependiendo si pudo escribir o no
-        """
-        if len(jlist) != len(values):
-            print("[modbus_tcp.py]: write_from_json(): ERROR, input jlist and values are not the same lenght")
-            return None
+    #     Returns:
+    #         bool: array con true o false dependiendo si pudo escribir o no
+    #     """
+    #     if len(jlist) != len(values):
+    #         print("[modbus_tcp.py]: write_from_json(): ERROR, input jlist and values are not the same lenght")
+    #         return None
 
-        write_output = [False, False, False]
-        for i in range(len(jlist)):
+    #     write_output = [False, False, False]
+    #     for i in range(len(jlist)):
 
-            stop_flag = False
-            while not stop_flag:
-                write_resp = self.write_single_register(jlist[i]['start_reg'], values[i])
-                if write_resp:
-                    print(f"[modbus_tcp.py]: write_from_json(): {jlist[i]['name']} Written successfully!")
-                    write_output[i] = True
-                    stop_flag = True
-                elif not write_resp:
-                    print(f"[modbus_tcp.py]: write_from_json(): {jlist[i]['name']} Error while writing...")
-                else:
-                    print(f"[modbus_tcp.py]: write_from_json(): unknown error")
-                    write_output[i] = False
-                    stop_flag = True
+    #         stop_flag = False
+    #         while not stop_flag:
+    #             write_resp = self.write_single_register(jlist[i]['start_reg'], values[i])
+    #             if write_resp:
+    #                 print(f"[modbus_tcp.py]: write_from_json(): {jlist[i]['name']} Written successfully!")
+    #                 write_output[i] = True
+    #                 stop_flag = True
+    #             elif not write_resp:
+    #                 print(f"[modbus_tcp.py]: write_from_json(): {jlist[i]['name']} Error while writing...")
+    #             else:
+    #                 print(f"[modbus_tcp.py]: write_from_json(): unknown error")
+    #                 write_output[i] = False
+    #                 stop_flag = True
 
-        return write_resp
+    #     return write_resp
 
 def optimize_read(registers_name: List[str], all_registers: List[dict], max_step: int = 30) -> List[dict]:
     """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
