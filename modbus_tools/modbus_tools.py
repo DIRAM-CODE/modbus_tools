@@ -407,116 +407,114 @@ class JsonModbusClient_RW(JsonModbusClient_R):
 
     #     return write_resp
 
-class ManagerFunctions:
+def optimize_read(registers_name: List[str], all_registers: List[dict], max_step: int = 30) -> List[dict]:
+    """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
 
-    def optimize_read(registers_name: List[str], all_registers: List[dict], max_step: int = 30) -> List[dict]:
-        """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
+    Args:
+        registers_name (List[str]): Nombre de registros
+        all_registers (List[dict]): Registros a buscar
+        max_step (int, optional): Tamaño maximo de bloque de lectura. Defaults to 30.
 
-        Args:
-            registers_name (List[str]): Nombre de registros
-            all_registers (List[dict]): Registros a buscar
-            max_step (int, optional): Tamaño maximo de bloque de lectura. Defaults to 30.
+    Returns:
+        List[dict]: Lista de registros agrupada por su cercania
+    """
 
-        Returns:
-            List[dict]: Lista de registros agrupada por su cercania
-        """
+    ret_list = []
+    aux_list = []
+    start_reg = {}
+    for i, reg_name in enumerate(registers_name):
+        register_search = list(filter(lambda r: r['name'] == reg_name, all_registers))
 
-        ret_list = []
-        aux_list = []
-        start_reg = {}
-        for i, reg_name in enumerate(registers_name):
-            register_search = list(filter(lambda r: r['name'] == reg_name, all_registers))
+        if len(register_search) < 1:
+            continue
 
-            if len(register_search) < 1:
-                continue
+        register = register_search[0]
 
-            register = register_search[0]
-
-            if len(aux_list) == 0:
-                start_reg = register
-
-            difference = (register['start_reg'] + register['bytes2read']) - start_reg['start_reg']
-
-            if difference < max_step:
-                aux_list.append(register)
-                if i == (len(registers_name) - 1):
-                    ret_list.append(aux_list)
-                continue
-
-            ret_list.append(aux_list)
-            aux_list = []
-            aux_list.append(register)
+        if len(aux_list) == 0:
             start_reg = register
-        return ret_list
 
-    def JsonModbus_ReadManager(modbus_client_r:JsonModbusClient_R, registers:list, counter:int=25):
-        """Lee multiples registros de modbus por bloques
+        difference = (register['start_reg'] + register['bytes2read']) - start_reg['start_reg']
 
-        Args:
-            modbus_client_r (JsonModbusClient_R): Cliente modbus con funciones de lectura
-            registers (List[dict]): Lista de bloques de registros a leer
-            counter (int, optional): Maximo de intentos de lectura. Defaults to 25.
+        if difference < max_step:
+            aux_list.append(register)
+            if i == (len(registers_name) - 1):
+                ret_list.append(aux_list)
+            continue
 
-        Returns:
-            List[RegReadResponse]: Lista de valores de lectura de registros
-        """
-        output = []
-        for register in registers:
-            for i in range(counter):
-                # if env.UPDATE_NOW_FLAG:
-                #     break
-                # time.sleep(0.5)
-                response = modbus_client_r.read_from_json(register)
-                if response != None:
+        ret_list.append(aux_list)
+        aux_list = []
+        aux_list.append(register)
+        start_reg = register
+    return ret_list
 
-                    # print readed registers in a 'human readable' list
-                    for item in response:
-                        print(item)
+def JsonModbus_ReadManager(modbus_client_r:JsonModbusClient_R, registers:list, counter:int=25):
+    """Lee multiples registros de modbus por bloques
 
-                    output.extend(response)
-                    break
+    Args:
+        modbus_client_r (JsonModbusClient_R): Cliente modbus con funciones de lectura
+        registers (List[dict]): Lista de bloques de registros a leer
+        counter (int, optional): Maximo de intentos de lectura. Defaults to 25.
+
+    Returns:
+        List[RegReadResponse]: Lista de valores de lectura de registros
+    """
+    output = []
+    for register in registers:
+        for i in range(counter):
             # if env.UPDATE_NOW_FLAG:
-                # break
+            #     break
+            # time.sleep(0.5)
+            response = modbus_client_r.read_from_json(register)
+            if response != None:
 
-        return output
+                # print readed registers in a 'human readable' list
+                for item in response:
+                    print(item)
 
-    def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers:list, values:list, counter:int=25) -> dict:
-        """Escribe multiples registros de modbus por bloques
+                output.extend(response)
+                break
+        # if env.UPDATE_NOW_FLAG:
+            # break
 
-        Args:
-            json_modbus_client_rw (JsonModbusClient_RW): Cliente modbus con funciones de escritura
-            registers (List): Registros a escribir
-            values (List): Valores a escribir
-            counter (int, optional): Contador de intentos. Defaults to 25.
+    return output
 
-        Returns:
-            dict: Indicador si el registro se escribio
-        """
-        output = {}
+def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers:list, values:list, counter:int=25) -> dict:
+    """Escribe multiples registros de modbus por bloques
 
-        for i in range(len(registers)):
+    Args:
+        json_modbus_client_rw (JsonModbusClient_RW): Cliente modbus con funciones de escritura
+        registers (List): Registros a escribir
+        values (List): Valores a escribir
+        counter (int, optional): Contador de intentos. Defaults to 25.
 
-            response = None
-            counterBreak = 0
+    Returns:
+        dict: Indicador si el registro se escribio
+    """
+    output = {}
 
-            print('[main_functions.py]:')
-            print(f'... Register to write: {registers[i]}')
-            print(f'... Value to write: {values[i]}')
+    for i in range(len(registers)):
 
-            while response != True:
+        response = None
+        counterBreak = 0
 
-                # .write_register() devuelve 'bool' o 'None' si logra escribir o no,
-                # en especifico dentro de su codigo se define: " return True if is_ok else None "
-                response = json_modbus_client_rw.write_register(registers[i], values[i])
-                if response == True:
-                    print(f'... ... Register written: {values[i]}')
-                    output[registers[i]['name']] = response
+        print('[main_functions.py]:')
+        print(f'... Register to write: {registers[i]}')
+        print(f'... Value to write: {values[i]}')
 
-                counterBreak += 1
-                if counterBreak > counter:
-                    print(f'... ... WARNING!: Write attempts limit reached, Regisger not written!: {registers[i]}')
-                    break
+        while response != True:
 
-                time.sleep(0.2)
+            # .write_register() devuelve 'bool' o 'None' si logra escribir o no,
+            # en especifico dentro de su codigo se define: " return True if is_ok else None "
+            response = json_modbus_client_rw.write_register(registers[i], values[i])
+            if response == True:
+                print(f'... ... Register written: {values[i]}')
+                output[registers[i]['name']] = response
 
-        return output
+            counterBreak += 1
+            if counterBreak > counter:
+                print(f'... ... WARNING!: Write attempts limit reached, Regisger not written!: {registers[i]}')
+                break
+
+            time.sleep(0.2)
+
+    return output
