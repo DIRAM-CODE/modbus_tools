@@ -1,182 +1,416 @@
 [
   {
-    "name": "Reactive_Energy_1",
+    "name": "RMS_V1N",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 0,
-    "description": "0x49800049 0 Cycle Reactive energy in P1 of feeder 1 Sum refresh every 1 min",
+    "description": "0x60804081 0 3 sec RMS V1N of feeder 1 Sample refresh every 3 sec",
     "index": 1
   },
   {
-    "name": "Reactive_Energy_3",
+    "name": "RMS_I1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 2,
-    "description": "0x49810049 2 Cycle Reactive energy in P3 of feeder 1 Sum refresh every 1 min",
+    "description": "0x60800081 2 3 sec RMS I1 of feeder 1 Sample refresh every 3 sec",
     "index": 2
   },
   {
-    "name": "Reactive_Energy_2",
+    "name": "RMS_V3N",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 4,
-    "description": "0x49808049 4 Cycle Reactive energy in P2 of feeder 1 Sum refresh every 1 min",
+    "description": "0x60814081 4 3 sec RMS V3N of feeder 1 Sample refresh every 3 sec",
     "index": 3
   },
   {
-    "name": "Reactive_Energy_Total",
+    "name": "RMS_I3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 6,
-    "description": "0x49820049 6 Cycle Reactive energy in P total of feeder 1 Sum refresh every 1 min",
+    "description": "0x60810081 6 3 sec RMS I3 of feeder 1 Sample refresh every 3 sec",
     "index": 4
   },
   {
-    "name": "Reactive_Power_1",
+    "name": "RMS_V2N",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 8,
-    "description": "0x59800033 8 Cycle Reactive power P1 of feeder 1 Average refresh every 1 min",
+    "description": "0x6080C081 8 3 sec RMS V2N of feeder 1 Sample refresh every 3 sec",
     "index": 5
   },
   {
-    "name": "Reactive_Power_3",
+    "name": "RMS_I2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 10,
-    "description": "0x59810033 10 Cycle Reactive power P3 of feeder 1 Average refresh every 1 min",
+    "description": "0x60808081 10 3 sec RMS I2 of feeder 1 Sample refresh every 3 sec",
     "index": 6
   },
   {
-    "name": "Reactive_Power_2",
+    "name": "RMS_V23",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 12,
-    "description": "0x59808033 12 Cycle Reactive power P2 of feeder 1 Average refresh every 1 min",
+    "description": "0x60834081 12 3 sec RMS V23 of feeder 1 Sample refresh every 3 sec",
     "index": 7
   },
   {
-    "name": "Reactive_Power_Total",
+    "name": "RMS_V12",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 14,
-    "description": "0x59820033 14 Cycle Reactive power P total of feeder 1 Average refresh every 1 min",
+    "description": "0x6082C081 14 3 sec RMS V12 of feeder 1 Sample refresh every 3 sec",
     "index": 8
   },
   {
-    "name": "Active_Energy_1",
+    "name": "RMS_V31",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 16,
-    "description": "0x49800047 16 Cycle Active energy in P1 of feeder 1 Sum refresh every 1 min",
+    "description": "0x6083C081 16 3 sec RMS V31 of feeder 1 Sample refresh every 3 sec",
     "index": 9
   },
   {
-    "name": "Active_Energy_3",
+    "name": "ACTIVE_POWER_P1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 18,
-    "description": "0x49810047 18 Cycle Active energy in P3 of feeder 1 Sum refresh every 1 min",
+    "description": "0x60800032 18 3 sec Active power P1 of feeder 1 Sample refresh every 3 sec",
     "index": 10
   },
   {
-    "name": "Active_Energy_2",
+    "name": "ACTIVE_POWER_P3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 20,
-    "description": "0x49808047 20 Cycle Active energy in P2 of feeder 1 Sum refresh every 1 min",
+    "description": "0x60810032 20 3 sec Active power P3 of feeder 1 Sample refresh every 3 sec",
     "index": 11
   },
   {
-    "name": "Active_Energy_Total",
+    "name": "ACTIVE_POWER_P2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 22,
-    "description": "0x49820047 22 Cycle Active energy in P total of feeder 1 Sum refresh every 1 min",
+    "description": "0x60808032 22 3 sec Active power P2 of feeder 1 Sample refresh every 3 sec",
     "index": 12
   },
   {
-    "name": "Active_Power_1",
+    "name": "ACTIVE_POWER_PT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 24,
-    "description": "0x59800032 24 Cycle Active power P1 of feeder 1 Average refresh every 1 min",
+    "description": "0x60820032 24 3 sec Active power P total of feeder 1 Sample refresh every 3 sec",
     "index": 13
   },
   {
-    "name": "Active_Power_3",
+    "name": "REACTIVE_POWER_P1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 26,
-    "description": "0x59810032 26 Cycle Active power P3 of feeder 1 Average refresh every 1 min",
+    "description": "0x60800033 26 3 sec Reactive power P1 of feeder 1 Sample refresh every 3 sec",
     "index": 14
   },
   {
-    "name": "Active_Power_2",
+    "name": "REACTIVE_POWER_P3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 28,
-    "description": "0x59808032 28 Cycle Active power P2 of feeder 1 Average refresh every 1 min",
+    "description": "0x60810033 28 3 sec Reactive power P3 of feeder 1 Sample refresh every 3 sec",
     "index": 15
   },
   {
-    "name": "Active_Power_Total",
+    "name": "REACTIVE_POWER_P2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 30,
-    "description": "0x59820032 30 Cycle Active power P total of feeder 1 Average refresh every 1 min",
+    "description": "0x60808033 30 3 sec Reactive power P2 of feeder 1 Sample refresh every 3 sec",
     "index": 16
   },
   {
-    "name": "Power_Factor_1",
+    "name": "REACTIVE_POWER_PT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 32,
-    "description": "0x59800038 32 Cycle Power factor P1 of feeder 1 Average refresh every 1 min",
+    "description": "0x60820033 32 3 sec Reactive power P total of feeder 1 Sample refresh every 3 sec",
     "index": 17
   },
   {
-    "name": "Power_Factor_3",
+    "name": "APPARENT_POWER_P1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 34,
-    "description": "0x59810038 34 Cycle Power factor P3 of feeder 1 Average refresh every 1 min",
+    "description": "0x60800034 34 3 sec Apparent power P1 of feeder 1 Sample refresh every 3 sec",
     "index": 18
   },
   {
-    "name": "Power_Factor_2",
+    "name": "APPARENT_POWER_P3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 36,
-    "description": "0x59808038 36 Cycle Power factor P2 of feeder 1 Average refresh every 1 min",
+    "description": "0x60810034 36 3 sec Apparent power P3 of feeder 1 Sample refresh every 3 sec",
     "index": 19
   },
   {
-    "name": "Power_Factor_Total",
+    "name": "APPARENT_POWER_P2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 38,
-    "description": "0x59820038 38 Cycle Power factor P total of feeder 1 Average refresh every 1 min",
+    "description": "0x60808034 38 3 sec Apparent power P2 of feeder 1 Sample refresh every 3 sec",
     "index": 20
+  },
+  {
+    "name": "APPARENT_POWER_PT",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 40,
+    "description": "0x60820034 40 3 sec Apparent power P total of feeder 1 Sample refresh every 3 sec",
+    "index": 21
+  },
+  {
+    "name": "ACTIVE_ENERGY_P1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 42,
+    "description": "0x61800047 42 1 min Active energy in P1 of feeder 1 Sample refresh every 1 min",
+    "index": 22
+  },
+  {
+    "name": "ACTIVE_ENERGY_P3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 44,
+    "description": "0x61810047 44 1 min Active energy in P3 of feeder 1 Sample refresh every 1 min",
+    "index": 23
+  },
+  {
+    "name": "ACTIVE_ENERGY_P2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 46,
+    "description": "0x61808047 46 1 min Active energy in P2 of feeder 1 Sample refresh every 1 min",
+    "index": 24
+  },
+  {
+    "name": "ACTIVE_ENERGY_PT",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 48,
+    "description": "0x61820047 48 1 min Active energy in P total of feeder 1 Sample refresh every 1 min",
+    "index": 25
+  },
+  {
+    "name": "REACTIVE_ENERGY_P1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 50,
+    "description": "0x61800049 50 1 min Reactive energy in P1 of feeder 1 Sample refresh every 1 min",
+    "index": 26
+  },
+  {
+    "name": "REACTIVE_ENERGY_P3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 52,
+    "description": "0x61810049 52 1 min Reactive energy in P3 of feeder 1 Sample refresh every 1 min",
+    "index": 27
+  },
+  {
+    "name": "REACTIVE_ENERGY_P2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 54,
+    "description": "0x61808049 54 1 min Reactive energy in P2 of feeder 1 Sample refresh every 1 min",
+    "index": 28
+  },
+  {
+    "name": "REACTIVE_ENERGY_PT",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 56,
+    "description": "0x61820049 56 1 min Reactive energy in P total of feeder 1 Sample refresh every 1 min",
+    "index": 29
+  },
+  {
+    "name": "ACTIVE_ENERGY_P1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 58,
+    "description": "0x61800048 58 1 min Active energy out P1 of feeder 1 Sample refresh every 1 min",
+    "index": 30
+  },
+  {
+    "name": "ACTIVE_ENERGY_P3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 60,
+    "description": "0x61810048 60 1 min Active energy out P3 of feeder 1 Sample refresh every 1 min",
+    "index": 31
+  },
+  {
+    "name": "ACTIVE_ENERGY_P2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 62,
+    "description": "0x61808048 62 1 min Active energy out P2 of feeder 1 Sample refresh every 1 min",
+    "index": 32
+  },
+  {
+    "name": "ACTIVE_ENERGY_PT",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 64,
+    "description": "0x61820048 64 1 min Active energy out P total of feeder 1 Sample refresh every 1 min",
+    "index": 33
+  },
+  {
+    "name": "REACTIVE_ENERGY_P1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 66,
+    "description": "0x6180004A 66 1 min Reactive energy out P1 of feeder 1 Sample refresh every 1 min",
+    "index": 34
+  },
+  {
+    "name": "REACTIVE_ENERGY_P3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 68,
+    "description": "0x6181004A 68 1 min Reactive energy out P3 of feeder 1 Sample refresh every 1 min",
+    "index": 35
+  },
+  {
+    "name": "REACTIVE_ENERGY_P2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 70,
+    "description": "0x6180804A 70 1 min Reactive energy out P2 of feeder 1 Sample refresh every 1 min",
+    "index": 36
+  },
+  {
+    "name": "REACTIVE_ENERGY_PT",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 72,
+    "description": "0x6182004A 72 1 min Reactive energy out P total of feeder 1 Sample refresh every 1 min",
+    "index": 37
+  },
+  {
+    "name": "THD_V1N",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 74,
+    "description": "0x60804086 74 3 sec THD V1N of feeder 1 Sample refresh every 3 sec",
+    "index": 38
+  },
+  {
+    "name": "THD_I1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 76,
+    "description": "0x60800086 76 3 sec THD I1 of feeder 1 Sample refresh every 3 sec",
+    "index": 39
+  },
+  {
+    "name": "THD_V3N",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 78,
+    "description": "0x60814086 78 3 sec THD V3N of feeder 1 Sample refresh every 3 sec",
+    "index": 40
+  },
+  {
+    "name": "THD_I3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 80,
+    "description": "0x60810086 80 3 sec THD I3 of feeder 1 Sample refresh every 3 sec",
+    "index": 41
+  },
+  {
+    "name": "THD_V2N",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 82,
+    "description": "0x6080C086 82 3 sec THD V2N of feeder 1 Sample refresh every 3 sec",
+    "index": 42
+  },
+  {
+    "name": "THD_I2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 84,
+    "description": "0x60808086 84 3 sec THD I2 of feeder 1 Sample refresh every 3 sec",
+    "index": 43
+  },
+  {
+    "name": "THD_V23",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 86,
+    "description": "0x60834086 86 3 sec THD V23 of feeder 1 Sample refresh every 3 sec",
+    "index": 44
+  },
+  {
+    "name": "THD_V12",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 88,
+    "description": "0x6082C086 88 3 sec THD V12 of feeder 1 Sample refresh every 3 sec",
+    "index": 45
+  },
+  {
+    "name": "THD_V31",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 90,
+    "description": "0x6083C086 90 3 sec THD V31 of feeder 1 Sample refresh every 3 sec",
+    "index": 46
   }
 ]
