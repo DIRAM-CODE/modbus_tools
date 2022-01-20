@@ -1,20 +1,29 @@
 [
   {
-    "name": "1/2cycle_RMS_I1_Average_refresh_1min",
+    "name": "Cycle_PowerFactor_P1_Average_Refresh_Cycle",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 0,
-    "description": "0x59804081 0 _ 1/2 cycle RMS I1 of feeder 1 Average refresh every 1 min",
+    "description": "0x5E000038 0 Cycle Power factor P1 of feeder 1 Average refresh every Cycle",
     "index": 1
   },
   {
-    "name": "1min_RMS_I1_Sample_refresh_1min",
+    "name": "Cycle_PowerFactor_P3_Average_Refresh_Cycle",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 2,
-    "description": "0x61804081 2 _ 1 min RMS I1 of feeder 1 Sample refresh every 1 min",
+    "description": "0x5E010038 2 Cycle Power factor P3 of feeder 1 Average refresh every Cycle",
+    "index": 2
+  },
+  {
+    "name": "Cycle_PowerFactor_P2_Average_Refresh_Cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 2,
+    "description": "0x5E008038 4 Cycle Power factor P2 of feeder 1 Average refresh every Cycle",
     "index": 2
   }
 ]
