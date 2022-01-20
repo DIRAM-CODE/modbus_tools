@@ -1,20 +1,20 @@
 [
   {
-    "name": "FP_1_resolution_1min_get_sample_refresh_1min",
+    "name": "VN1_resolution_1/2cycle_get_average_refresh_1min",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 0,
-    "description": "0x61800038 0 \"1 min Power factor P1 of feeder 1 Sample refresh every 1 min",
+    "description": "0x59804081 0 _ 1/2 cycle RMS V1N of feeder 1 Average refresh every 1 min",
     "index": 1
   },
   {
-    "name": "FP_1_resolution_cycle_get_average_refresh_1min",
+    "name": "V1N_resolution_1min_get_sample_refresh_1min",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 2,
-    "description": "0x59800038 2 \"Cycle Power factor P1 of feeder 1 Average refresh every 1 min",
+    "description": "0x61804081 2 _ 1 min RMS V1N of feeder 1 Sample refresh every 1 min",
     "index": 2
   }
 ]
