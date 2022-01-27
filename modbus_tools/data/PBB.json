@@ -1,29 +1,362 @@
 [
   {
-    "name": "Cycle_PowerFactor_P1_Average_Refresh_Cycle",
+    "name": "cycle_PF_1_average_cycle",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 0,
-    "description": "0x5E000038 0 Cycle Power factor P1 of feeder 1 Average refresh every Cycle",
+    "description": "0x5E000038 0 \"Cycle Power factor P1 of feeder 1 Average refresh every Cycle",
     "index": 1
   },
   {
-    "name": "Cycle_PowerFactor_P3_Average_Refresh_Cycle",
+    "name": "cycle_PF_1_sample_cycle",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 2,
-    "description": "0x5E010038 2 Cycle Power factor P3 of feeder 1 Average refresh every Cycle",
+    "description": "0x66000038 2 \"Cycle Power factor P1 of feeder 1 Sample refresh every Cycle",
     "index": 2
   },
   {
-    "name": "Cycle_PowerFactor_P2_Average_Refresh_Cycle",
+    "name": "cycle_PF_1_average_3sec",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
-    "start_reg": 2,
-    "description": "0x5E008038 4 Cycle Power factor P2 of feeder 1 Average refresh every Cycle",
-    "index": 2
+    "start_reg": 4,
+    "description": "0x58800038 4 \"Cycle Power factor P1 of feeder 1 Average refresh every 3 sec",
+    "index": 3
+  },
+  {
+    "name": "cycle_PF_1_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 6,
+    "description": "0x59800038 6 \"Cycle Power factor P1 of feeder 1 Average refresh every 1 min",
+    "index": 4
+  },
+  {
+    "name": "cycle_PF_3_average_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 8,
+    "description": "0x5E010038 8 \"Cycle Power factor P3 of feeder 1 Average refresh every Cycle",
+    "index": 5
+  },
+  {
+    "name": "cycle_PF_3_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 10,
+    "description": "0x66010038 10 \"Cycle Power factor P3 of feeder 1 Sample refresh every Cycle",
+    "index": 6
+  },
+  {
+    "name": "cycle_PF_3_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 12,
+    "description": "0x58810038 12 \"Cycle Power factor P3 of feeder 1 Average refresh every 3 sec",
+    "index": 7
+  },
+  {
+    "name": "cycle_PF_3_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 14,
+    "description": "0x59810038 14 \"Cycle Power factor P3 of feeder 1 Average refresh every 1 min",
+    "index": 8
+  },
+  {
+    "name": "cycle_PF_2_average_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 16,
+    "description": "0x5E008038 16 \"Cycle Power factor P2 of feeder 1 Average refresh every Cycle",
+    "index": 9
+  },
+  {
+    "name": "cycle_PF_2_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 18,
+    "description": "0x66008038 18 \"Cycle Power factor P2 of feeder 1 Sample refresh every Cycle",
+    "index": 10
+  },
+  {
+    "name": "cycle_PF_2_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 20,
+    "description": "0x58808038 20 \"Cycle Power factor P2 of feeder 1 Average refresh every 3 sec",
+    "index": 11
+  },
+  {
+    "name": "cycle_PF_2_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 22,
+    "description": "0x59808038 22 \"Cycle Power factor P2 of feeder 1 Average refresh every 1 min",
+    "index": 12
+  },
+  {
+    "name": "cycle_PF_T_average_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 24,
+    "description": "0x5E020038 24 \"Cycle Power factor P total of feeder 1 Average refresh every Cycle",
+    "index": 13
+  },
+  {
+    "name": "cycle_PF_T_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 26,
+    "description": "0x66020038 26 \"Cycle Power factor P total of feeder 1 Sample refresh every Cycle",
+    "index": 14
+  },
+  {
+    "name": "cycle_PF_T_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 28,
+    "description": "0x58820038 28 \"Cycle Power factor P total of feeder 1 Average refresh every 3 sec",
+    "index": 15
+  },
+  {
+    "name": "cycle_PF_T_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 30,
+    "description": "0x59820038 30 \"Cycle Power factor P total of feeder 1 Average refresh every 1 min",
+    "index": 16
+  },
+  {
+    "name": "cycle_P_1_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 32,
+    "description": "0x66000032 32 \"Cycle Active power P1 of feeder 1 Sample refresh every Cycle",
+    "index": 17
+  },
+  {
+    "name": "cycle_P_1_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 34,
+    "description": "0x58800032 34 \"Cycle Active power P1 of feeder 1 Average refresh every 3 sec",
+    "index": 18
+  },
+  {
+    "name": "cycle_P_1_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 36,
+    "description": "0x59800032 36 \"Cycle Active power P1 of feeder 1 Average refresh every 1 min",
+    "index": 19
+  },
+  {
+    "name": "cycle_P_3_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 38,
+    "description": "0x66010032 38 \"Cycle Active power P3 of feeder 1 Sample refresh every Cycle",
+    "index": 20
+  },
+  {
+    "name": "cycle_P_3_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 40,
+    "description": "0x58810032 40 \"Cycle Active power P3 of feeder 1 Average refresh every 3 sec",
+    "index": 21
+  },
+  {
+    "name": "cycle_P_3_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 42,
+    "description": "0x59810032 42 \"Cycle Active power P3 of feeder 1 Average refresh every 1 min",
+    "index": 22
+  },
+  {
+    "name": "cycle_P_2_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 44,
+    "description": "0x66008032 44 \"Cycle Active power P2 of feeder 1 Sample refresh every Cycle",
+    "index": 23
+  },
+  {
+    "name": "cycle_P_2_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 46,
+    "description": "0x58808032 46 \"Cycle Active power P2 of feeder 1 Average refresh every 3 sec",
+    "index": 24
+  },
+  {
+    "name": "cycle_P_2_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 48,
+    "description": "0x59808032 48 \"Cycle Active power P2 of feeder 1 Average refresh every 1 min",
+    "index": 25
+  },
+  {
+    "name": "cycle_P_T_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 50,
+    "description": "0x66020032 50 \"Cycle Active power P total of feeder 1 Sample refresh every Cycle",
+    "index": 26
+  },
+  {
+    "name": "cycle_P_T_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 52,
+    "description": "0x58820032 52 \"Cycle Active power P total of feeder 1 Average refresh every 3 sec",
+    "index": 27
+  },
+  {
+    "name": "cycle_P_T_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 54,
+    "description": "0x59820032 54 \"Cycle Active power P total of feeder 1 Average refresh every 1 min",
+    "index": 28
+  },
+  {
+    "name": "cycle_Q_1_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 56,
+    "description": "0x66000033 56 \"Cycle Reactive power P1 of feeder 1 Sample refresh every Cycle",
+    "index": 29
+  },
+  {
+    "name": "cycle_Q_1_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 58,
+    "description": "0x58800033 58 \"Cycle Reactive power P1 of feeder 1 Average refresh every 3 sec",
+    "index": 30
+  },
+  {
+    "name": "cycle_Q_1_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 60,
+    "description": "0x59800033 60 \"Cycle Reactive power P1 of feeder 1 Average refresh every 1 min",
+    "index": 31
+  },
+  {
+    "name": "cycle_Q_3_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 62,
+    "description": "0x66010033 62 \"Cycle Reactive power P3 of feeder 1 Sample refresh every Cycle",
+    "index": 32
+  },
+  {
+    "name": "cycle_Q_3_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 64,
+    "description": "0x58810033 64 \"Cycle Reactive power P3 of feeder 1 Average refresh every 3 sec",
+    "index": 33
+  },
+  {
+    "name": "cycle_Q_3_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 66,
+    "description": "0x59810033 66 \"Cycle Reactive power P3 of feeder 1 Average refresh every 1 min",
+    "index": 34
+  },
+  {
+    "name": "cycle_Q_2_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 68,
+    "description": "0x66008033 68 \"Cycle Reactive power P2 of feeder 1 Sample refresh every Cycle",
+    "index": 35
+  },
+  {
+    "name": "cycle_Q_2_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 70,
+    "description": "0x58808033 70 \"Cycle Reactive power P2 of feeder 1 Average refresh every 3 sec",
+    "index": 36
+  },
+  {
+    "name": "cycle_Q_2_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 72,
+    "description": "0x59808033 72 \"Cycle Reactive power P2 of feeder 1 Average refresh every 1 min",
+    "index": 37
+  },
+  {
+    "name": "cycle_Q_T_sample_cycle",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 74,
+    "description": "0x66020033 74 \"Cycle Reactive power P total of feeder 1 Sample refresh every Cycle",
+    "index": 38
+  },
+  {
+    "name": "cycle_Q_T_average_3sec",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 76,
+    "description": "0x58820033 76 \"Cycle Reactive power P total of feeder 1 Average refresh every 3 sec",
+    "index": 39
+  },
+  {
+    "name": "cycle_Q_T_average_1min",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 78,
+    "description": "0x59820033 78 \"Cycle Reactive power P total of feeder 1 Average refresh every 1 min",
+    "index": 40
   }
 ]
