@@ -202,7 +202,7 @@ class JsonModbusClient_R(ModbusClient):
 
     #     return RegReadResponse(register_info['name'], register_info['unit'], value)
 
-    def read_from_json(self, jlist: list[dict]) -> list[RegReadResponse]:
+    def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
         Args:
