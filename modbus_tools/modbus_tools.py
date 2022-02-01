@@ -202,7 +202,7 @@ class JsonModbusClient_R(ModbusClient):
 
     #     return RegReadResponse(register_info['name'], register_info['unit'], value)
 
-    def read_from_json(self, jlist: list(dict)) -> list(RegReadResponse):
+    def read_from_json(self, jlist: list[dict]) -> list[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
         Args:
@@ -407,7 +407,7 @@ class JsonModbusClient_RW(JsonModbusClient_R):
 
     #     return write_resp
 
-def optimize_read(registers_name: List(str), all_registers: List(dict), max_step: int = 30) -> List(dict):
+def optimize_read(registers_name: List[str], all_registers: List[dict], max_step: int = 30) -> List[dict]:
     """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
 
     Args:
