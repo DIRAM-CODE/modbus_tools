@@ -1,362 +1,1554 @@
 [
   {
-    "name": "cycle_PF_1_average_cycle",
+    "name": "V1N",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 0,
-    "description": "0x5E000038 0 \"Cycle Power factor P1 of feeder 1 Average refresh every Cycle",
-    "index": 1
+    "description": "0x59804081 0 \"1/2 cycle RMS V1N of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_1_sample_cycle",
+    "name": "I1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 2,
-    "description": "0x66000038 2 \"Cycle Power factor P1 of feeder 1 Sample refresh every Cycle",
-    "index": 2
+    "description": "0x59800081 2 \"1/2 cycle RMS I1 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_1_average_3sec",
+    "name": "V3N",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 4,
-    "description": "0x58800038 4 \"Cycle Power factor P1 of feeder 1 Average refresh every 3 sec",
-    "index": 3
+    "description": "0x59814081 4 \"1/2 cycle RMS V3N of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_1_average_1min",
+    "name": "I3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 6,
-    "description": "0x59800038 6 \"Cycle Power factor P1 of feeder 1 Average refresh every 1 min",
-    "index": 4
+    "description": "0x59810081 6 \"1/2 cycle RMS I3 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_3_average_cycle",
+    "name": "V2N",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 8,
-    "description": "0x5E010038 8 \"Cycle Power factor P3 of feeder 1 Average refresh every Cycle",
-    "index": 5
+    "description": "0x5980C081 8 \"1/2 cycle RMS V2N of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_3_sample_cycle",
+    "name": "I2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 10,
-    "description": "0x66010038 10 \"Cycle Power factor P3 of feeder 1 Sample refresh every Cycle",
-    "index": 6
+    "description": "0x59808081 10 \"1/2 cycle RMS I2 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_3_average_3sec",
+    "name": "V23",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 12,
-    "description": "0x58810038 12 \"Cycle Power factor P3 of feeder 1 Average refresh every 3 sec",
-    "index": 7
+    "description": "0x59834081 12 \"1/2 cycle RMS V23 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_3_average_1min",
+    "name": "V12",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 14,
-    "description": "0x59810038 14 \"Cycle Power factor P3 of feeder 1 Average refresh every 1 min",
-    "index": 8
+    "description": "0x5982C081 14 \"1/2 cycle RMS V12 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_2_average_cycle",
+    "name": "V31",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 16,
-    "description": "0x5E008038 16 \"Cycle Power factor P2 of feeder 1 Average refresh every Cycle",
-    "index": 9
+    "description": "0x5983C081 16 \"1/2 cycle RMS V31 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_2_sample_cycle",
+    "name": "P1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 18,
-    "description": "0x66008038 18 \"Cycle Power factor P2 of feeder 1 Sample refresh every Cycle",
-    "index": 10
+    "description": "0x59800032 18 \"Cycle Active power P1 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_2_average_3sec",
+    "name": "P3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 20,
-    "description": "0x58808038 20 \"Cycle Power factor P2 of feeder 1 Average refresh every 3 sec",
-    "index": 11
+    "description": "0x59810032 20 \"Cycle Active power P3 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_2_average_1min",
+    "name": "P2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 22,
-    "description": "0x59808038 22 \"Cycle Power factor P2 of feeder 1 Average refresh every 1 min",
-    "index": 12
+    "description": "0x59808032 22 \"Cycle Active power P2 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_T_average_cycle",
+    "name": "PT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 24,
-    "description": "0x5E020038 24 \"Cycle Power factor P total of feeder 1 Average refresh every Cycle",
-    "index": 13
+    "description": "0x59820032 24 \"Cycle Active power P total of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_T_sample_cycle",
+    "name": "Q1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 26,
-    "description": "0x66020038 26 \"Cycle Power factor P total of feeder 1 Sample refresh every Cycle",
-    "index": 14
+    "description": "0x59800033 26 \"Cycle Reactive power P1 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_T_average_3sec",
+    "name": "Q3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 28,
-    "description": "0x58820038 28 \"Cycle Power factor P total of feeder 1 Average refresh every 3 sec",
-    "index": 15
+    "description": "0x59810033 28 \"Cycle Reactive power P3 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_PF_T_average_1min",
+    "name": "Q2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 30,
-    "description": "0x59820038 30 \"Cycle Power factor P total of feeder 1 Average refresh every 1 min",
-    "index": 16
+    "description": "0x59808033 30 \"Cycle Reactive power P2 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_1_sample_cycle",
+    "name": "QT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 32,
-    "description": "0x66000032 32 \"Cycle Active power P1 of feeder 1 Sample refresh every Cycle",
-    "index": 17
+    "description": "0x59820033 32 \"Cycle Reactive power P total of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_1_average_3sec",
+    "name": "S1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 34,
-    "description": "0x58800032 34 \"Cycle Active power P1 of feeder 1 Average refresh every 3 sec",
-    "index": 18
+    "description": "0x59800034 34 \"Cycle Apparent power P1 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_1_average_1min",
+    "name": "S3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 36,
-    "description": "0x59800032 36 \"Cycle Active power P1 of feeder 1 Average refresh every 1 min",
-    "index": 19
+    "description": "0x59810034 36 \"Cycle Apparent power P3 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_3_sample_cycle",
+    "name": "S2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 38,
-    "description": "0x66010032 38 \"Cycle Active power P3 of feeder 1 Sample refresh every Cycle",
-    "index": 20
+    "description": "0x59808034 38 \"Cycle Apparent power P2 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_3_average_3sec",
+    "name": "ST",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 40,
-    "description": "0x58810032 40 \"Cycle Active power P3 of feeder 1 Average refresh every 3 sec",
-    "index": 21
+    "description": "0x59820034 40 \"Cycle Apparent power P total of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_3_average_1min",
+    "name": "PF1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 42,
-    "description": "0x59810032 42 \"Cycle Active power P3 of feeder 1 Average refresh every 1 min",
-    "index": 22
+    "description": "0x59800038 42 \"Cycle Power factor P1 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_2_sample_cycle",
+    "name": "PF3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 44,
-    "description": "0x66008032 44 \"Cycle Active power P2 of feeder 1 Sample refresh every Cycle",
-    "index": 23
+    "description": "0x59810038 44 \"Cycle Power factor P3 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_2_average_3sec",
+    "name": "PF2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 46,
-    "description": "0x58808032 46 \"Cycle Active power P2 of feeder 1 Average refresh every 3 sec",
-    "index": 24
+    "description": "0x59808038 46 \"Cycle Power factor P2 of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_2_average_1min",
+    "name": "PFT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 48,
-    "description": "0x59808032 48 \"Cycle Active power P2 of feeder 1 Average refresh every 1 min",
-    "index": 25
+    "description": "0x59820038 48 \"Cycle Power factor P total of feeder 1 Average refresh every 1 min"
   },
   {
-    "name": "cycle_P_T_sample_cycle",
+    "name": "EPinT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 50,
-    "description": "0x66020032 50 \"Cycle Active power P total of feeder 1 Sample refresh every Cycle",
-    "index": 26
+    "description": "0x49820047 50 \"Cycle Active energy in P total of feeder 1 Sum refresh every 1 min"
   },
   {
-    "name": "cycle_P_T_average_3sec",
+    "name": "EPoutT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 52,
-    "description": "0x58820032 52 \"Cycle Active power P total of feeder 1 Average refresh every 3 sec",
-    "index": 27
+    "description": "0x49820048 52 \"Cycle Active energy out P total of feeder 1 Sum refresh every 1 min"
   },
   {
-    "name": "cycle_P_T_average_1min",
+    "name": "EQinT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 54,
-    "description": "0x59820032 54 \"Cycle Active power P total of feeder 1 Average refresh every 1 min",
-    "index": 28
+    "description": "0x49820049 54 \"Cycle Reactive energy in P total of feeder 1 Sum refresh every 1 min"
   },
   {
-    "name": "cycle_Q_1_sample_cycle",
+    "name": "EQoutT",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 56,
-    "description": "0x66000033 56 \"Cycle Reactive power P1 of feeder 1 Sample refresh every Cycle",
-    "index": 29
+    "description": "0x4982004A 56 \"Cycle Reactive energy out P total of feeder 1 Sum refresh every 1 min"
   },
   {
-    "name": "cycle_Q_1_average_3sec",
+    "name": "PST23",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 58,
-    "description": "0x58800033 58 \"Cycle Reactive power P1 of feeder 1 Average refresh every 3 sec",
-    "index": 30
+    "description": "0x5A03409A 58 \"10 min Flicker PST V23 of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_1_average_1min",
+    "name": "PST12",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 60,
-    "description": "0x59800033 60 \"Cycle Reactive power P1 of feeder 1 Average refresh every 1 min",
-    "index": 31
+    "description": "0x5A02C09A 60 \"10 min Flicker PST V12 of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_3_sample_cycle",
+    "name": "PST31",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 62,
-    "description": "0x66010033 62 \"Cycle Reactive power P3 of feeder 1 Sample refresh every Cycle",
-    "index": 32
+    "description": "0x5A03C09A 62 \"10 min Flicker PST V31 of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_3_average_3sec",
+    "name": "THDI1",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 64,
-    "description": "0x58810033 64 \"Cycle Reactive power P3 of feeder 1 Average refresh every 3 sec",
-    "index": 33
+    "description": "0x5A000086 64 \"10/12 cycles THD I1 of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_3_average_1min",
+    "name": "THDI3",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 66,
-    "description": "0x59810033 66 \"Cycle Reactive power P3 of feeder 1 Average refresh every 1 min",
-    "index": 34
+    "description": "0x5A010086 66 \"10/12 cycles THD I3 of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_2_sample_cycle",
+    "name": "THDI2",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 68,
-    "description": "0x66008033 68 \"Cycle Reactive power P2 of feeder 1 Sample refresh every Cycle",
-    "index": 35
+    "description": "0x5A008086 68 \"10/12 cycles THD I2 of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_2_average_3sec",
+    "name": "V1pos",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 70,
-    "description": "0x58808033 70 \"Cycle Reactive power P2 of feeder 1 Average refresh every 3 sec",
-    "index": 36
+    "description": "0x5A02003E 70 \"10/12 cycles Positive sequence V total of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_2_average_1min",
+    "name": "I1pos",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 72,
-    "description": "0x59808033 72 \"Cycle Reactive power P2 of feeder 1 Average refresh every 1 min",
-    "index": 37
+    "description": "0x5A020043 72 \"10/12 cycles Positive sequence I total of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_T_sample_cycle",
+    "name": "V1neg",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 74,
-    "description": "0x66020033 74 \"Cycle Reactive power P total of feeder 1 Sample refresh every Cycle",
-    "index": 38
+    "description": "0x5A02003F 74 \"10/12 cycles Negative sequence V total of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_T_average_3sec",
+    "name": "I1neg",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 76,
-    "description": "0x58820033 76 \"Cycle Reactive power P total of feeder 1 Average refresh every 3 sec",
-    "index": 39
+    "description": "0x5A020044 76 \"10/12 cycles Negative sequence I total of feeder 1 Average refresh every 10 min"
   },
   {
-    "name": "cycle_Q_T_average_1min",
+    "name": "V1zero",
     "bytes2read": 4,
     "type": "float",
     "unit": null,
     "start_reg": 78,
-    "description": "0x59820033 78 \"Cycle Reactive power P total of feeder 1 Average refresh every 1 min",
-    "index": 40
+    "description": "0x5A02003D 78 \"10/12 cycles Zero sequence V total of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "I1zero",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 80,
+    "description": "0x5A020042 80 \"10/12 cycles Zero sequence I total of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_0",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 82,
+    "description": "0x16800140 82 \"10/12 cycles Harmonics I1 index 0 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 84,
+    "description": "0x5A000500 84 \"10/12 cycles Harmonics I1 index 1 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 86,
+    "description": "0x5A000501 86 \"10/12 cycles Harmonics I1 index 2 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 88,
+    "description": "0x5A000502 88 \"10/12 cycles Harmonics I1 index 3 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_4",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 90,
+    "description": "0x5A000503 90 \"10/12 cycles Harmonics I1 index 4 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_5",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 92,
+    "description": "0x5A000504 92 \"10/12 cycles Harmonics I1 index 5 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_6",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 94,
+    "description": "0x5A000505 94 \"10/12 cycles Harmonics I1 index 6 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_7",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 96,
+    "description": "0x5A000506 96 \"10/12 cycles Harmonics I1 index 7 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_8",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 98,
+    "description": "0x5A000507 98 \"10/12 cycles Harmonics I1 index 8 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_9",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 100,
+    "description": "0x5A000508 100 \"10/12 cycles Harmonics I1 index 9 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_10",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 102,
+    "description": "0x5A000509 102 \"10/12 cycles Harmonics I1 index 10 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_11",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 104,
+    "description": "0x5A00050A 104 \"10/12 cycles Harmonics I1 index 11 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_12",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 106,
+    "description": "0x5A00050B 106 \"10/12 cycles Harmonics I1 index 12 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_13",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 108,
+    "description": "0x5A00050C 108 \"10/12 cycles Harmonics I1 index 13 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_14",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 110,
+    "description": "0x5A00050D 110 \"10/12 cycles Harmonics I1 index 14 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_15",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 112,
+    "description": "0x5A00050E 112 \"10/12 cycles Harmonics I1 index 15 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_16",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 114,
+    "description": "0x5A00050F 114 \"10/12 cycles Harmonics I1 index 16 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_17",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 116,
+    "description": "0x5A000510 116 \"10/12 cycles Harmonics I1 index 17 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_18",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 118,
+    "description": "0x5A000511 118 \"10/12 cycles Harmonics I1 index 18 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_19",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 120,
+    "description": "0x5A000512 120 \"10/12 cycles Harmonics I1 index 19 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_20",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 122,
+    "description": "0x5A000513 122 \"10/12 cycles Harmonics I1 index 20 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_21",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 124,
+    "description": "0x5A000514 124 \"10/12 cycles Harmonics I1 index 21 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_22",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 126,
+    "description": "0x5A000515 126 \"10/12 cycles Harmonics I1 index 22 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_23",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 128,
+    "description": "0x5A000516 128 \"10/12 cycles Harmonics I1 index 23 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_24",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 130,
+    "description": "0x5A000517 130 \"10/12 cycles Harmonics I1 index 24 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_25",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 132,
+    "description": "0x5A000518 132 \"10/12 cycles Harmonics I1 index 25 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_26",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 134,
+    "description": "0x5A000519 134 \"10/12 cycles Harmonics I1 index 26 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_27",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 136,
+    "description": "0x5A00051A 136 \"10/12 cycles Harmonics I1 index 27 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_28",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 138,
+    "description": "0x5A00051B 138 \"10/12 cycles Harmonics I1 index 28 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_29",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 140,
+    "description": "0x5A00051C 140 \"10/12 cycles Harmonics I1 index 29 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_30",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 142,
+    "description": "0x5A00051D 142 \"10/12 cycles Harmonics I1 index 30 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_31",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 144,
+    "description": "0x5A00051E 144 \"10/12 cycles Harmonics I1 index 31 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_32",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 146,
+    "description": "0x5A00051F 146 \"10/12 cycles Harmonics I1 index 32 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_33",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 148,
+    "description": "0x5A000520 148 \"10/12 cycles Harmonics I1 index 33 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_34",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 150,
+    "description": "0x5A000521 150 \"10/12 cycles Harmonics I1 index 34 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_35",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 152,
+    "description": "0x5A000522 152 \"10/12 cycles Harmonics I1 index 35 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_36",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 154,
+    "description": "0x5A000523 154 \"10/12 cycles Harmonics I1 index 36 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_37",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 156,
+    "description": "0x5A000524 156 \"10/12 cycles Harmonics I1 index 37 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_38",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 158,
+    "description": "0x5A000525 158 \"10/12 cycles Harmonics I1 index 38 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_39",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 160,
+    "description": "0x5A000526 160 \"10/12 cycles Harmonics I1 index 39 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_40",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 162,
+    "description": "0x5A000527 162 \"10/12 cycles Harmonics I1 index 40 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_41",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 164,
+    "description": "0x5A000528 164 \"10/12 cycles Harmonics I1 index 41 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_42",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 166,
+    "description": "0x5A000529 166 \"10/12 cycles Harmonics I1 index 42 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_43",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 168,
+    "description": "0x5A00052A 168 \"10/12 cycles Harmonics I1 index 43 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_44",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 170,
+    "description": "0x5A00052B 170 \"10/12 cycles Harmonics I1 index 44 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_45",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 172,
+    "description": "0x5A00052C 172 \"10/12 cycles Harmonics I1 index 45 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_46",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 174,
+    "description": "0x5A00052D 174 \"10/12 cycles Harmonics I1 index 46 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_47",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 176,
+    "description": "0x5A00052E 176 \"10/12 cycles Harmonics I1 index 47 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_48",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 178,
+    "description": "0x5A00052F 178 \"10/12 cycles Harmonics I1 index 48 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_49",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 180,
+    "description": "0x5A000530 180 \"10/12 cycles Harmonics I1 index 49 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI1_50",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 182,
+    "description": "0x5A000531 182 \"10/12 cycles Harmonics I1 index 50 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_0",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 184,
+    "description": "0x16804140 184 \"10/12 cycles Harmonics I3 index 0 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 186,
+    "description": "0x5A010500 186 \"10/12 cycles Harmonics I3 index 1 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 188,
+    "description": "0x5A010501 188 \"10/12 cycles Harmonics I3 index 2 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 190,
+    "description": "0x5A010502 190 \"10/12 cycles Harmonics I3 index 3 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_4",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 192,
+    "description": "0x5A010503 192 \"10/12 cycles Harmonics I3 index 4 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_5",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 194,
+    "description": "0x5A010504 194 \"10/12 cycles Harmonics I3 index 5 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_6",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 196,
+    "description": "0x5A010505 196 \"10/12 cycles Harmonics I3 index 6 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_7",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 198,
+    "description": "0x5A010506 198 \"10/12 cycles Harmonics I3 index 7 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_8",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 200,
+    "description": "0x5A010507 200 \"10/12 cycles Harmonics I3 index 8 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_9",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 202,
+    "description": "0x5A010508 202 \"10/12 cycles Harmonics I3 index 9 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_10",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 204,
+    "description": "0x5A010509 204 \"10/12 cycles Harmonics I3 index 10 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_11",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 206,
+    "description": "0x5A01050A 206 \"10/12 cycles Harmonics I3 index 11 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_12",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 208,
+    "description": "0x5A01050B 208 \"10/12 cycles Harmonics I3 index 12 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_13",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 210,
+    "description": "0x5A01050C 210 \"10/12 cycles Harmonics I3 index 13 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_14",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 212,
+    "description": "0x5A01050D 212 \"10/12 cycles Harmonics I3 index 14 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_15",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 214,
+    "description": "0x5A01050E 214 \"10/12 cycles Harmonics I3 index 15 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_16",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 216,
+    "description": "0x5A01050F 216 \"10/12 cycles Harmonics I3 index 16 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_17",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 218,
+    "description": "0x5A010510 218 \"10/12 cycles Harmonics I3 index 17 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_18",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 220,
+    "description": "0x5A010511 220 \"10/12 cycles Harmonics I3 index 18 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_19",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 222,
+    "description": "0x5A010512 222 \"10/12 cycles Harmonics I3 index 19 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_20",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 224,
+    "description": "0x5A010513 224 \"10/12 cycles Harmonics I3 index 20 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_21",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 226,
+    "description": "0x5A010514 226 \"10/12 cycles Harmonics I3 index 21 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_22",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 228,
+    "description": "0x5A010515 228 \"10/12 cycles Harmonics I3 index 22 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_23",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 230,
+    "description": "0x5A010516 230 \"10/12 cycles Harmonics I3 index 23 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_24",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 232,
+    "description": "0x5A010517 232 \"10/12 cycles Harmonics I3 index 24 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_25",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 234,
+    "description": "0x5A010518 234 \"10/12 cycles Harmonics I3 index 25 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_26",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 236,
+    "description": "0x5A010519 236 \"10/12 cycles Harmonics I3 index 26 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_27",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 238,
+    "description": "0x5A01051A 238 \"10/12 cycles Harmonics I3 index 27 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_28",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 240,
+    "description": "0x5A01051B 240 \"10/12 cycles Harmonics I3 index 28 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_29",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 242,
+    "description": "0x5A01051C 242 \"10/12 cycles Harmonics I3 index 29 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_30",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 244,
+    "description": "0x5A01051D 244 \"10/12 cycles Harmonics I3 index 30 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_31",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 246,
+    "description": "0x5A01051E 246 \"10/12 cycles Harmonics I3 index 31 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_32",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 248,
+    "description": "0x5A01051F 248 \"10/12 cycles Harmonics I3 index 32 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_33",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 250,
+    "description": "0x5A010520 250 \"10/12 cycles Harmonics I3 index 33 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_34",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 252,
+    "description": "0x5A010521 252 \"10/12 cycles Harmonics I3 index 34 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_35",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 254,
+    "description": "0x5A010522 254 \"10/12 cycles Harmonics I3 index 35 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_36",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 256,
+    "description": "0x5A010523 256 \"10/12 cycles Harmonics I3 index 36 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_37",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 258,
+    "description": "0x5A010524 258 \"10/12 cycles Harmonics I3 index 37 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_38",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 260,
+    "description": "0x5A010525 260 \"10/12 cycles Harmonics I3 index 38 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_39",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 262,
+    "description": "0x5A010526 262 \"10/12 cycles Harmonics I3 index 39 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_40",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 264,
+    "description": "0x5A010527 264 \"10/12 cycles Harmonics I3 index 40 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_41",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 266,
+    "description": "0x5A010528 266 \"10/12 cycles Harmonics I3 index 41 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_42",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 268,
+    "description": "0x5A010529 268 \"10/12 cycles Harmonics I3 index 42 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_43",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 270,
+    "description": "0x5A01052A 270 \"10/12 cycles Harmonics I3 index 43 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_44",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 272,
+    "description": "0x5A01052B 272 \"10/12 cycles Harmonics I3 index 44 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_45",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 274,
+    "description": "0x5A01052C 274 \"10/12 cycles Harmonics I3 index 45 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_46",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 276,
+    "description": "0x5A01052D 276 \"10/12 cycles Harmonics I3 index 46 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_47",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 278,
+    "description": "0x5A01052E 278 \"10/12 cycles Harmonics I3 index 47 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_48",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 280,
+    "description": "0x5A01052F 280 \"10/12 cycles Harmonics I3 index 48 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_49",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 282,
+    "description": "0x5A010530 282 \"10/12 cycles Harmonics I3 index 49 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI3_50",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 284,
+    "description": "0x5A010531 284 \"10/12 cycles Harmonics I3 index 50 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_0",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 286,
+    "description": "0x16802140 286 \"10/12 cycles Harmonics I2 index 0 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_1",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 288,
+    "description": "0x5A008500 288 \"10/12 cycles Harmonics I2 index 1 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_2",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 290,
+    "description": "0x5A008501 290 \"10/12 cycles Harmonics I2 index 2 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_3",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 292,
+    "description": "0x5A008502 292 \"10/12 cycles Harmonics I2 index 3 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_4",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 294,
+    "description": "0x5A008503 294 \"10/12 cycles Harmonics I2 index 4 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_5",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 296,
+    "description": "0x5A008504 296 \"10/12 cycles Harmonics I2 index 5 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_6",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 298,
+    "description": "0x5A008505 298 \"10/12 cycles Harmonics I2 index 6 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_7",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 300,
+    "description": "0x5A008506 300 \"10/12 cycles Harmonics I2 index 7 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_8",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 302,
+    "description": "0x5A008507 302 \"10/12 cycles Harmonics I2 index 8 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_9",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 304,
+    "description": "0x5A008508 304 \"10/12 cycles Harmonics I2 index 9 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_10",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 306,
+    "description": "0x5A008509 306 \"10/12 cycles Harmonics I2 index 10 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_11",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 308,
+    "description": "0x5A00850A 308 \"10/12 cycles Harmonics I2 index 11 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_12",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 310,
+    "description": "0x5A00850B 310 \"10/12 cycles Harmonics I2 index 12 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_13",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 312,
+    "description": "0x5A00850C 312 \"10/12 cycles Harmonics I2 index 13 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_14",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 314,
+    "description": "0x5A00850D 314 \"10/12 cycles Harmonics I2 index 14 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_15",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 316,
+    "description": "0x5A00850E 316 \"10/12 cycles Harmonics I2 index 15 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_16",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 318,
+    "description": "0x5A00850F 318 \"10/12 cycles Harmonics I2 index 16 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_17",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 320,
+    "description": "0x5A008510 320 \"10/12 cycles Harmonics I2 index 17 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_18",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 322,
+    "description": "0x5A008511 322 \"10/12 cycles Harmonics I2 index 18 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_19",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 324,
+    "description": "0x5A008512 324 \"10/12 cycles Harmonics I2 index 19 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_20",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 326,
+    "description": "0x5A008513 326 \"10/12 cycles Harmonics I2 index 20 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_21",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 328,
+    "description": "0x5A008514 328 \"10/12 cycles Harmonics I2 index 21 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_22",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 330,
+    "description": "0x5A008515 330 \"10/12 cycles Harmonics I2 index 22 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_23",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 332,
+    "description": "0x5A008516 332 \"10/12 cycles Harmonics I2 index 23 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_24",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 334,
+    "description": "0x5A008517 334 \"10/12 cycles Harmonics I2 index 24 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_25",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 336,
+    "description": "0x5A008518 336 \"10/12 cycles Harmonics I2 index 25 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_26",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 338,
+    "description": "0x5A008519 338 \"10/12 cycles Harmonics I2 index 26 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_27",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 340,
+    "description": "0x5A00851A 340 \"10/12 cycles Harmonics I2 index 27 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_28",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 342,
+    "description": "0x5A00851B 342 \"10/12 cycles Harmonics I2 index 28 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_29",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 344,
+    "description": "0x5A00851C 344 \"10/12 cycles Harmonics I2 index 29 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_30",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 346,
+    "description": "0x5A00851D 346 \"10/12 cycles Harmonics I2 index 30 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_31",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 348,
+    "description": "0x5A00851E 348 \"10/12 cycles Harmonics I2 index 31 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_32",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 350,
+    "description": "0x5A00851F 350 \"10/12 cycles Harmonics I2 index 32 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_33",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 352,
+    "description": "0x5A008520 352 \"10/12 cycles Harmonics I2 index 33 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_34",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 354,
+    "description": "0x5A008521 354 \"10/12 cycles Harmonics I2 index 34 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_35",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 356,
+    "description": "0x5A008522 356 \"10/12 cycles Harmonics I2 index 35 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_36",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 358,
+    "description": "0x5A008523 358 \"10/12 cycles Harmonics I2 index 36 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_37",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 360,
+    "description": "0x5A008524 360 \"10/12 cycles Harmonics I2 index 37 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_38",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 362,
+    "description": "0x5A008525 362 \"10/12 cycles Harmonics I2 index 38 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_39",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 364,
+    "description": "0x5A008526 364 \"10/12 cycles Harmonics I2 index 39 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_40",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 366,
+    "description": "0x5A008527 366 \"10/12 cycles Harmonics I2 index 40 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_41",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 368,
+    "description": "0x5A008528 368 \"10/12 cycles Harmonics I2 index 41 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_42",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 370,
+    "description": "0x5A008529 370 \"10/12 cycles Harmonics I2 index 42 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_43",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 372,
+    "description": "0x5A00852A 372 \"10/12 cycles Harmonics I2 index 43 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_44",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 374,
+    "description": "0x5A00852B 374 \"10/12 cycles Harmonics I2 index 44 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_45",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 376,
+    "description": "0x5A00852C 376 \"10/12 cycles Harmonics I2 index 45 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_46",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 378,
+    "description": "0x5A00852D 378 \"10/12 cycles Harmonics I2 index 46 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_47",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 380,
+    "description": "0x5A00852E 380 \"10/12 cycles Harmonics I2 index 47 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_48",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 382,
+    "description": "0x5A00852F 382 \"10/12 cycles Harmonics I2 index 48 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_49",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 384,
+    "description": "0x5A008530 384 \"10/12 cycles Harmonics I2 index 49 of feeder 1 Average refresh every 10 min"
+  },
+  {
+    "name": "hI2_50",
+    "bytes2read": 4,
+    "type": "float",
+    "unit": null,
+    "start_reg": 386,
+    "description": "0x5A008531 386 \"10/12 cycles Harmonics I2 index 50 of feeder 1 Average refresh every 10 min"
   }
 ]
