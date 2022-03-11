@@ -14,7 +14,6 @@ class ModbusConfig:
     """ Clase para definir la configuracion de cliente modbus
     """
 
-    #%% from File Utils
     def read_raw_file(self, path: str) -> str:
         try:
             with open(path, 'r') as f:
@@ -33,8 +32,6 @@ class ModbusConfig:
             #traceback.print_exc(file=sys.stdout)
             #print(str(e))
             raise(e)
-
-    #%% from modbus_config
 
     def conf_from_json(self, path):
         """ Reads 'app_conf.json' from specified path.
@@ -161,6 +158,10 @@ class JsonModbusClient_R(ModbusClient):
     """Clase que hereda de 'ModbusClient', implementa lectura de registros a partir de 'json'
     """
 
+    def __init__(self, metter_type, **kwargs):
+        super().__init__(**kwargs)
+        self.metter_type = metter_type
+
     @classmethod
     def from_app_conf(cls, app_conf_path:str):
         """ 'classmethod' para construir a partir del path a 'app_conf'. 
@@ -173,7 +174,7 @@ class JsonModbusClient_R(ModbusClient):
 
         modbus_conf = ModbusConfig(app_conf_path)
 
-        return cls(host = modbus_conf.host, port = modbus_conf.port, unit_id = modbus_conf.slave, auto_open = True)
+        return cls(metter_type = modbus_conf.metter_type, host = modbus_conf.host, port = modbus_conf.port, unit_id = modbus_conf.slave, auto_open = True)
 
     def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
