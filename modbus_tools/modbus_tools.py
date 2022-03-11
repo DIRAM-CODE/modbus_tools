@@ -1,7 +1,6 @@
 import json
 import os
 from datetime import datetime
-from enum import Enum
 import time
 import struct
 from typing import Any, Dict, List, cast
@@ -9,13 +8,6 @@ from numpy import true_divide
 from pyModbusTCP.client import ModbusClient
 import pkg_resources
 
-# enum for metter_types
-class MetterTypes(Enum):
-    """Enumeracion para acotar los tipos de medidores soportados
-    """
-    G4 = 'G4'
-    G4G3 = 'G4G3'
-    PBB = 'PBB'
 
 #%% from modbus_config
 class ModbusConfig:
@@ -64,10 +56,6 @@ class ModbusConfig:
         # json_string = stream.read().decode()
         self.__registers = json.load(stream)
         
-        # path = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'registers\\{self.__metter_type}.json')
-        # with open(path) as f:
-        #     self.__registers = json.load(f)
-        # pass
 
     def __init__(self, path_to_json):
         self.__host = "default"
@@ -172,36 +160,7 @@ class RegReadResponse:
 class JsonModbusClient_R(ModbusClient):
     """Clase que hereda de 'ModbusClient', implementa lectura de registros a partir de 'json'
     """
-
-    # Esta funcion no se usa actualmente
-    # def read_single_register(self, register_info: dict) -> RegReadResponse:
-    #     """Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
-
-    #     Args:
-    #         register_info (dict): Información de registro de consulta
-
-    #     Returns:
-    #         RegReadResponse: Respuesta de modbus en formato de registro
-    #     """
-
-    #     # Register math (find first and last register)
-    #     start_read = register_info['start_reg']
-    #     # Number of registers to read
-    #     regs2read = int(register_info['bytes2read'] / 2)
-
-    #     if self.debug == False:
-    #         print(f"[modbus_tcp.py]: regs2read: {regs2read}")
-
-    #     # Leer registros
-    #     regs_resp = self.read_input_registers(start_read, regs2read)
-
-    #     if regs_resp is None:
-    #         return None
-
-    #     value = self.ProcessResponse(regs_resp[0], register_info['type'])
-
-    #     return RegReadResponse(register_info['name'], register_info['unit'], value)
-
+    
     def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
@@ -211,6 +170,7 @@ class JsonModbusClient_R(ModbusClient):
         Returns:
             List[RegReadResponse]: Lista de registros parseados resultado de la lectura de modbus
         """
+        
         if len(jlist) < 1:
             return None
 
@@ -299,23 +259,6 @@ class JsonModbusClient_R(ModbusClient):
         # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
         return float_number
 
-    # def ParseDouble(self, input) -> float:
-    #     """ Parses a response into a float
-
-    #     Args:
-    #         input (register value): output from .read_input_registers()
-
-    #     Returns:
-    #         float: parsed float
-    #     """
-    #     str_input = f"{input:x}".ljust(16, '0')
-    #     bytes_input = bytes.fromhex(str_input)
-
-    #     float_number = struct.unpack('!d', bytes_input)[0]
-
-    #     # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
-    #     return float_number
-
     def read_G4_harmonics(self, modbus_code: int) -> list:
         """Funcion para leer los harmonicos medidos por un G4XX
 
@@ -357,6 +300,7 @@ class JsonModbusClient_RW(JsonModbusClient_R):
         Returns:
             bool: true o false dependiendo si pudo escribir o no
         """
+        
         stop_flag = False
         while not stop_flag:
             write_resp = self.write_single_register(register['start_reg'], value)
@@ -372,40 +316,6 @@ class JsonModbusClient_RW(JsonModbusClient_R):
                 stop_flag = True
 
         return write_resp
-
-    # Esta funcion no se usa actualmente
-    # def write_from_json(self, jlist: List[dict], values: List) -> bool:
-    #     """Realiza escritura de varios registros modbus
-
-    #     Args:
-    #         jlist (List[dict]): lista de registros a escribir
-    #         values (List): valores a escribir (en el mismo orden que los registros jlist)
-
-    #     Returns:
-    #         bool: array con true o false dependiendo si pudo escribir o no
-    #     """
-    #     if len(jlist) != len(values):
-    #         print("[modbus_tcp.py]: write_from_json(): ERROR, input jlist and values are not the same lenght")
-    #         return None
-
-    #     write_output = [False, False, False]
-    #     for i in range(len(jlist)):
-
-    #         stop_flag = False
-    #         while not stop_flag:
-    #             write_resp = self.write_single_register(jlist[i]['start_reg'], values[i])
-    #             if write_resp:
-    #                 print(f"[modbus_tcp.py]: write_from_json(): {jlist[i]['name']} Written successfully!")
-    #                 write_output[i] = True
-    #                 stop_flag = True
-    #             elif not write_resp:
-    #                 print(f"[modbus_tcp.py]: write_from_json(): {jlist[i]['name']} Error while writing...")
-    #             else:
-    #                 print(f"[modbus_tcp.py]: write_from_json(): unknown error")
-    #                 write_output[i] = False
-    #                 stop_flag = True
-
-    #     return write_resp
 
 def optimize_read(registers_name: List[str], all_registers: List[dict], max_step: int = 30) -> List[dict]:
     """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
@@ -458,7 +368,9 @@ def JsonModbus_ReadManager(modbus_client_r:JsonModbusClient_R, registers:list, c
     Returns:
         List[RegReadResponse]: Lista de valores de lectura de registros
     """
+
     output = []
+
     for register_group in registers:
         for i in range(counter):
             # if env.UPDATE_NOW_FLAG:
@@ -490,6 +402,7 @@ def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers
     Returns:
         dict: Indicador si el registro se escribio
     """
+
     output = {}
 
     for i in range(len(registers)):
