@@ -160,7 +160,21 @@ class RegReadResponse:
 class JsonModbusClient_R(ModbusClient):
     """Clase que hereda de 'ModbusClient', implementa lectura de registros a partir de 'json'
     """
-    
+
+    @classmethod
+    def from_app_conf(cls, app_conf_path:str):
+        """ 'classmethod' para construir a partir del path a 'app_conf'. 
+        JsonModbusClient_R crea el objeto 'ModbusConfig' e inicia el cliente
+        con el host, port y slave_port cotenidos en app_conf.json.
+
+        Args:
+            app_conf_path (str): path del archivo app_conf.json
+        """
+
+        modbus_conf = ModbusConfig(app_conf_path)
+
+        return cls(host = modbus_conf.host, port = modbus_conf.port, unit_id = modbus_conf.slave, auto_open = True)
+
     def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
