@@ -16,7 +16,7 @@ setuptools.setup(
         "Bug Tracker": "None"
     },
     license='None',
-    packages=['modbus_tools', 'modbus_tools/utils'],
+    packages=['modbus_tools'],
     install_requires=['numpy', 'pyModbusTCP'],
     include_package_data=True,
     package_data={'': ['data/*.json']},
