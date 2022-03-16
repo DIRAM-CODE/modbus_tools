@@ -9,7 +9,6 @@ from pyModbusTCP.client import ModbusClient
 import pkg_resources
 
 
-#%% from modbus_config
 class ModbusConfig:
     """ Clase para definir la configuracion de cliente modbus
     """
@@ -53,7 +52,6 @@ class ModbusConfig:
         # json_string = stream.read().decode()
         self.__registers = json.load(stream)
         
-
     def __init__(self, path_to_json):
         self.__host = "default"
         self.__port = 0
@@ -103,7 +101,6 @@ class ModbusConfig:
 
         return example_conf
 
-#%% modbus_tcp
 class RegReadResponse:
     """ Es una clase auxiliar para dar formato de objeto a un peticion de modbus
     """
@@ -158,9 +155,15 @@ class JsonModbusClient_R(ModbusClient):
     """Clase que hereda de 'ModbusClient', implementa lectura de registros a partir de 'json'
     """
 
+    @property
+    def registers(self):
+        return self._registers
+
     def __init__(self, metter_type, **kwargs):
         super().__init__(**kwargs)
         self.metter_type = metter_type
+
+        self._registers = json.load(pkg_resources.resource_stream(__name__, f'data/{self.metter_type}.json'))
 
     @classmethod
     def from_app_conf(cls, app_conf_path:str):
