@@ -295,9 +295,9 @@ def sort_regs_to_read(regsToRead, jsonRegs):
             ind = j
             ind_adjacent = j + 1
 
-            reg = list(filter(lambda r: r.name == regsToRead[ind], jsonRegs))
+            reg = list(filter(lambda r: r['name'] == regsToRead[ind], jsonRegs))
             regInd = reg['memory_block_adress']
-            reg_adjacent = list(filter(lambda r: r.name == regsToRead[ind_adjacent], jsonRegs))
+            reg_adjacent = list(filter(lambda r: r['name'] == regsToRead[ind_adjacent], jsonRegs))
             regInd_adjacent = reg_adjacent['memory_block_adress']
 
             if regInd > regInd_adjacent: # regsToRead[ind] > regsToRead[ind_adjacent]:
