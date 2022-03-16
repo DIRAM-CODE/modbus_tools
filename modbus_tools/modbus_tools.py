@@ -367,7 +367,7 @@ class JsonModbusClient_RW(JsonModbusClient_R):
 
         return write_resp
 
-def optimize_read(registers_name: list(str), all_registers: list(dict), max_step: int = 30) -> list(dict):
+def optimize_read(registers_name: list[str], all_registers: list[dict], max_step: int = 30) -> list[dict]:
     """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
 
     Args:
@@ -392,8 +392,9 @@ def optimize_read(registers_name: list(str), all_registers: list(dict), max_step
 
         if len(aux_list) == 0:
             start_reg = register
-
-        difference = (register['start_reg'] + register['bytes2read']) - start_reg['start_reg']
+            
+        #TODO: ¿usar una diferencia fija en vez del block_size?, NO TODOS LOS REGISTROS TRAEN ESPECIFICADO EL BLOCK SIZE
+        difference = (register['memory_block_adress'] + register['memory_block_size']) - start_reg['memory_block_adress']
 
         if difference < max_step:
             aux_list.append(register)
