@@ -8,7 +8,7 @@ from numpy import true_divide
 from pyModbusTCP.client import ModbusClient
 import pkg_resources
 
-from utils import sort_regs_to_read
+from .utils import sort_regs_to_read
 
 class ModbusConfig:
     """ Clase para definir la configuracion de cliente modbus
