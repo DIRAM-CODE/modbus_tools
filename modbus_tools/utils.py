@@ -295,9 +295,13 @@ def sort_regs_to_read(regsToRead, jsonRegs):
             ind = j
             ind_adjacent = j + 1
 
-            reg = list(filter(lambda r: r['name'] == regsToRead[ind], jsonRegs))
+            reg = list(filter(lambda r: r['name'] == regsToRead[ind], jsonRegs))[0]
+            if len(reg) > 1:
+                print('ERROR en modbus_tools/utils.py / sort_regs_to_read()')
             regInd = reg['memory_block_adress']
-            reg_adjacent = list(filter(lambda r: r['name'] == regsToRead[ind_adjacent], jsonRegs))
+            reg_adjacent = list(filter(lambda r: r['name'] == regsToRead[ind_adjacent], jsonRegs))[0]
+            if len(reg_adjacent) > 1:
+                print('ERROR en modbus_tools/utils.py / sort_regs_to_read()')
             regInd_adjacent = reg_adjacent['memory_block_adress']
 
             if regInd > regInd_adjacent: # regsToRead[ind] > regsToRead[ind_adjacent]:
