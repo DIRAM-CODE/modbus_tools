@@ -198,12 +198,12 @@ class JsonModbusClient_R(ModbusClient):
         # Register math (find first and last register)
         start_register = jlist[0]
         end_register = jlist[-1]
-        start_read = start_register['start_reg']
-        end_read = end_register['start_reg']
+        start_read = start_register['memory_block_adress']
+        end_read = end_register['memory_block_adress']
         # Number of registers to read
-        regs2read = int((end_read - start_read) + (end_register['bytes2read'] / 2))
+        regs2read = int((end_read - start_read) + (end_register['memory_block_size'] / 2))
         # Register's adress, type and name; stored in dictionaries
-        target_regs = [entry.get('start_reg') for entry in jlist]
+        target_regs = [entry.get('memory_block_adress') for entry in jlist]
         target_types = [entry.get('type') for entry in jlist]
         target_names = [entry.get('name') for entry in jlist]
         target_units = [entry.get('unit') for entry in jlist]
@@ -217,7 +217,7 @@ class JsonModbusClient_R(ModbusClient):
             print(f"[modbus_tcp.py]: target_regs: {target_regs}")
 
         # Leer registros
-        regs_resp = self.read_input_registers(start_register['start_reg'], regs2read)
+        regs_resp = self.read_input_registers(start_register['memory_block_adress'], regs2read)
         # Store the exact adresses of the readed registers
         readed_regs = list(range(start_read, start_read + regs2read))
 
@@ -392,7 +392,7 @@ def optimize_read(registers_name: list[str], all_registers: list[dict], max_step
 
         if len(aux_list) == 0:
             start_reg = register
-            
+
         #TODO: ¿usar una diferencia fija en vez del block_size?, NO TODOS LOS REGISTROS TRAEN ESPECIFICADO EL BLOCK SIZE
         difference = (register['memory_block_adress'] + register['memory_block_size']) - start_reg['memory_block_adress']
 
