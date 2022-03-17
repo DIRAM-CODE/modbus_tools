@@ -8,8 +8,6 @@ from numpy import true_divide
 from pyModbusTCP.client import ModbusClient
 import pkg_resources
 
-from .utils import sort_regs_to_read
-
 class ModbusConfig:
     """ Clase para definir la configuracion de cliente modbus
     """
@@ -204,7 +202,7 @@ class JsonModbusClient_R(ModbusClient):
         regs2read = int((end_read - start_read) + (end_register['memory_block_size'] / 2))
         # Register's adress, type and name; stored in dictionaries
         target_regs = [entry.get('memory_block_adress') for entry in jlist]
-        target_types = [entry.get('type') for entry in jlist]
+        target_types = [entry.get('value_type') for entry in jlist]
         target_names = [entry.get('name') for entry in jlist]
         target_units = [entry.get('unit') for entry in jlist]
         target_regs_types = dict(zip(target_regs, target_types))
@@ -280,11 +278,64 @@ class JsonModbusClient_R(ModbusClient):
         # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
         return float_number
 
+    def sort_regs_to_read(self, regsToRead):
+        """ Simple 'bubble sort' from: https://realpython.com/sorting-algorithms-python/#the-bubble-sort-algorithm-in-python
+
+        Args:
+            array (list(str)): unsorted array
+
+        Returns:
+            list(str): sorted array
+        """
+
+        n = len(regsToRead)
+
+        for i in range(n):
+            # Create a flag that will allow the function to
+            # terminate early if there's nothing left to sort
+            already_sorted = True
+
+            # Start looking at each item of the list one by one,
+            # comparing it with its adjacent value. With each
+            # iteration, the portion of the array that you look at
+            # shrinks because the remaining items have already been
+            # sorted.
+            for j in range(n - i - 1):
+                
+                ind = j
+                ind_adjacent = j + 1
+
+                reg = list(filter(lambda r: r['name'] == regsToRead[ind], self._registers))
+                if len(reg) > 1:
+                    print('ERROR en modbus_tools/utils.py / sort_regs_to_read()')
+                regInd = reg[0]['memory_block_adress']
+                reg_adjacent = list(filter(lambda r: r['name'] == regsToRead[ind_adjacent], self._registers))
+                if len(reg_adjacent) > 1:
+                    print('ERROR en modbus_tools/utils.py / sort_regs_to_read()')
+                regInd_adjacent = reg_adjacent[0]['memory_block_adress']
+
+                if regInd > regInd_adjacent: # regsToRead[ind] > regsToRead[ind_adjacent]:
+                    # If the item you're looking at is greater than its
+                    # adjacent value, then swap them
+                    regsToRead[ind], regsToRead[ind_adjacent] = regsToRead[ind_adjacent], regsToRead[ind]
+
+                    # Since you had to swap two elements,
+                    # set the `already_sorted` flag to `False` so the
+                    # algorithm doesn't finish prematurely
+                    already_sorted = False
+
+            # If there were no swaps during the last iteration,
+            # the array is already sorted, and you can terminate
+            if already_sorted:
+                break
+
+        return regsToRead
+
     def set_regs_to_read(self, registerToRead):
         
-        sorted_regs_to_read = sort_regs_to_read(registerToRead, self._registers)
+        sorted_regs_to_read = self.sort_regs_to_read(registerToRead)
 
-        self._registers_to_read = optimize_read(sorted_regs_to_read, self._registers)
+        self._registers_to_read = optimize_read(sorted_regs_to_read)
 
     def read_registers(self, counter:int=25):
 
@@ -292,9 +343,7 @@ class JsonModbusClient_R(ModbusClient):
 
         for register_group in self._registers_to_read:
             for i in range(counter):
-                # if env.UPDATE_NOW_FLAG:
-                #     break
-                # time.sleep(0.5)
+
                 response = self.read_from_json(register_group)
                 if response != None:
 
@@ -304,8 +353,7 @@ class JsonModbusClient_R(ModbusClient):
 
                     output.extend(response)
                     break
-            # if env.UPDATE_NOW_FLAG:
-                # break
+
 
         return output
 
@@ -407,39 +455,6 @@ def optimize_read(registers_name: list[str], all_registers: list[dict], max_step
         aux_list.append(register)
         start_reg = register
     return ret_list
-
-def JsonModbus_ReadManager(modbus_client_r:JsonModbusClient_R, registers:list, counter:int=25):
-    """Lee multiples registros de modbus por bloques
-
-    Args:
-        modbus_client_r (JsonModbusClient_R): Cliente modbus con funciones de lectura
-        registers (List[dict]): Lista de bloques de registros a leer
-        counter (int, optional): Maximo de intentos de lectura. Defaults to 25.
-
-    Returns:
-        List[RegReadResponse]: Lista de valores de lectura de registros
-    """
-
-    output = []
-
-    for register_group in registers:
-        for i in range(counter):
-            # if env.UPDATE_NOW_FLAG:
-            #     break
-            # time.sleep(0.5)
-            response = modbus_client_r.read_from_json(register_group)
-            if response != None:
-
-                # print readed registers in a 'human readable' list
-                for item in response:
-                    print(item)
-
-                output.extend(response)
-                break
-        # if env.UPDATE_NOW_FLAG:
-            # break
-
-    return output
 
 def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers:list, values:list, counter:int=25) -> dict:
     """Escribe multiples registros de modbus por bloques
