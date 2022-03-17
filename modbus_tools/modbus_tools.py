@@ -335,7 +335,7 @@ class JsonModbusClient_R(ModbusClient):
         
         sorted_regs_to_read = self.sort_regs_to_read(registerToRead)
 
-        self._registers_to_read = optimize_read(sorted_regs_to_read)
+        self._registers_to_read = optimize_read(sorted_regs_to_read, self._registers)
 
     def read_registers(self, counter:int=25):
 
