@@ -209,11 +209,6 @@ class JsonModbusClient_R(ModbusClient):
         target_regs_names = dict(zip(target_regs, target_names))
         target_regs_units = dict(zip(target_regs, target_units))
 
-        if self.debug == False:
-            print(f"[modbus_tcp.py]: len(target_jlist): {len(jlist)}")
-            print(f"[modbus_tcp.py]: regs2read: {regs2read}")
-            print(f"[modbus_tcp.py]: target_regs: {target_regs}")
-
         # Leer registros
         regs_resp = self.read_input_registers(start_register['memory_block_adress'], regs2read)
         # Store the exact adresses of the readed registers
@@ -224,11 +219,6 @@ class JsonModbusClient_R(ModbusClient):
 
         # Diccionario con datos de salida
         reg_response = dict(zip(readed_regs, regs_resp))
-
-        if self.debug == False:
-            print(f"[modbus_tcp.py]: readed_regs: {readed_regs}")
-            print(f"[modbus_tcp.py]: regs_resp: {regs_resp}")
-            print(f"[modbus_tcp.py]: len(regs_resp): {len(regs_resp)}")
 
         # Response list
         ret_list = []
@@ -454,6 +444,11 @@ def optimize_read(registers_name: list[str], all_registers: list[dict], max_step
         aux_list = []
         aux_list.append(register)
         start_reg = register
+
+        # si no 'cupo' y ya es la ultima iteracion, agregar el registro actual return list
+        if i == (len(registers_name) - 1):
+            ret_list.append(aux_list)
+        
     return ret_list
 
 def JsonModbus_WriteManager(json_modbus_client_rw:JsonModbusClient_RW, registers:list, values:list, counter:int=25) -> dict:
