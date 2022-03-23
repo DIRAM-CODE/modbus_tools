@@ -8,6 +8,8 @@ from numpy import true_divide
 from pyModbusTCP.client import ModbusClient
 import pkg_resources
 
+from modbus_tools.utils import MetterTypes
+
 class ModbusConfig:
     """ Clase para definir la configuracion de cliente modbus
     """
@@ -180,6 +182,33 @@ class JsonModbusClient_R(ModbusClient):
 
         return cls(metter_type = modbus_conf.metter_type, host = modbus_conf.host, port = modbus_conf.port, unit_id = modbus_conf.slave, auto_open = True)
 
+    def check_client_response(self):
+        """ Comprueba que el cliente modbus responda.
+
+        Returns:
+            bool: True if response is ok , False if not
+        """
+        
+        if (self.metter_type == MetterTypes.G4.name):
+
+            regs_resp = self.read_input_registers(2283, 2) # modbus_code: 2283 corresponde al voltage PRM_CODE_AVG_V1_RMS
+
+            if (regs_resp == None):
+                return False
+            elif (type(regs_resp[0]) == int):
+                return True
+            
+        elif (self.metter_type == MetterTypes.PBB.name):
+
+            regs_resp = self.read_input_registers(0, 2) # modbus_code: 0 corresponde al voltage "1/2 cycle RMS V1N of feeder 1 Average refresh every 1 min"
+
+            if (regs_resp == None):
+                return False
+            elif (type(regs_resp[0]) == int):
+                return True
+        else:
+            print("Tipo de medidor incorrecto ...")
+
     def read_from_json(self, jlist: List[dict]) -> List[RegReadResponse]:
         """ Realiza una consulta a un dispositivo modbus, y parsea la salida a una lista de RegReadResponse
 
@@ -347,7 +376,7 @@ class JsonModbusClient_R(ModbusClient):
 
         return output
 
-    def read_G4_harmonics(self, modbus_code: int) -> list:
+    def read_harmonics(self, modbus_code: int) -> list:
         """Funcion para leer los harmonicos medidos por un G4XX
 
         Args:
@@ -356,21 +385,27 @@ class JsonModbusClient_R(ModbusClient):
         Returns:
             list (float): armonicos del 1 al 50
         """
+        if self.metter_type == MetterTypes.G4.name:
 
-        response = None
-        harmonics = []
+            response = None
+            harmonics = []
 
-        write_response = self.write_single_register(2441, modbus_code)
-        if (write_response == True):
-            response = self.read_input_registers(2442, 100)
-        if (response != None):
-            if (len(response) > 0):
-                print(response)
+            write_response = self.write_single_register(2441, modbus_code)
+            if (write_response == True):
+                response = self.read_input_registers(2442, 100)
+            if (response != None):
+                if (len(response) > 0):
+                    print(response)
 
-                for i in range(len(response)):
-                    if (i == 0) or (i%2 == 0):
-                        harmonics.append(self.ParseFloat(response[i]))
-                        print(self.ParseFloat(response[i]))
+                    for i in range(len(response)):
+                        if (i == 0) or (i%2 == 0):
+                            harmonics.append(self.ParseFloat(response[i]))
+                            print(self.ParseFloat(response[i]))
+        
+        elif self.metter_type == MetterTypes.PBB.name:
+
+            return None
+            pass
 
         return harmonics
 
