@@ -53,13 +53,10 @@ class RegName(Enum):
     I1neg = 'I1neg',
     V1zero = 'V1zero',
     I1zero = 'I1zero',
-    # hI1 = 'hI1', # I1 Subgroup Harmonics 1-50th
-    # hI2 = 'hI2',
-    # hI3 = 'hI3'
 
-class RegMapping():    
+class PBB_harmonics():    
 
-    PBB_h1_group = [
+    h1_group = [
         'hI1_0',
         'hI1_1',
         'hI1_2',
@@ -113,7 +110,7 @@ class RegMapping():
         'hI1_50'
     ]
 
-    PBB_h2_group = [
+    h2_group = [
         'hI2_0',
         'hI2_1',
         'hI2_2',
@@ -167,7 +164,7 @@ class RegMapping():
         'hI2_50'
     ]
 
-    PBB_h3_group = [
+    h3_group = [
         'hI3_0',
         'hI3_1',
         'hI3_2',
@@ -220,50 +217,3 @@ class RegMapping():
         'hI3_49',
         'hI3_50'
     ]
-
-    PBB = {
-        RegName.V1N.name: 'V1N',
-        RegName.I1.name: 'I1',
-        RegName.V3N.name: 'V3N',
-        RegName.I3.name: 'I3',
-        RegName.V2N.name: 'V2N',
-        RegName.I2.name: 'I2',
-        RegName.V23.name: 'V23',
-        RegName.V12.name: 'V12',
-        RegName.V31.name: 'V31',
-        RegName.P1.name: 'P1',
-        RegName.P3.name: 'P3',
-        RegName.P2.name: 'P2',
-        RegName.PT.name: 'PT',
-        RegName.Q1.name: 'Q1',
-        RegName.Q3.name: 'Q3',
-        RegName.Q2.name: 'Q2',
-        RegName.QT.name: 'QT',
-        RegName.S1.name: 'S1',
-        RegName.S3.name: 'S3',
-        RegName.S2.name: 'S2',
-        RegName.ST.name: 'ST',
-        RegName.PF1.name: 'PF1',
-        RegName.PF3.name: 'PF3',
-        RegName.PF2.name: 'PF2',
-        RegName.PFT.name: 'PFT',
-        RegName.EPinT.name: 'EPinT',
-        RegName.EPoutT.name: 'EPoutT',
-        RegName.EQinT.name: 'EQinT',
-        RegName.EQoutT.name: 'EQoutT',
-        RegName.PST23.name: 'PST23',
-        RegName.PST12.name: 'PST12',
-        RegName.PST31.name: 'PST31',
-        RegName.THDI1.name: 'THDI1',
-        RegName.THDI3.name: 'THDI3',
-        RegName.THDI2.name: 'THDI2',
-        RegName.V1pos.name: 'V1pos',
-        RegName.I1pos.name: 'I1pos',
-        RegName.V1neg.name: 'V1neg',
-        RegName.I1neg.name: 'I1neg',
-        RegName.V1zero.name: 'V1zero',
-        RegName.I1zero.name: 'I1zero',
-        # RegName.hI1.name: PBB_h1_group, # I1 Subgroup Harmonics 1-50th #TODO decidir como incluir armonicos
-        # RegName.hI2.name: PBB_h2_group,
-        # RegName.hI3.name: PBB_h3_group
-    }

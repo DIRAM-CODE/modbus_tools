@@ -1,3 +1,4 @@
+from asyncio.base_subprocess import ReadSubprocessPipeProto
 import json
 import os
 from datetime import datetime
@@ -376,31 +377,39 @@ class JsonModbusClient_R(ModbusClient):
 
         return output
 
-    def read_harmonics(self, modbus_code: int) -> list:
-        """Funcion para leer los harmonicos medidos por un G4XX
-
-        Args:
-            modbus_code (int): codigo de correspondiente a los armonicos a medir (Appendix-1-TABLE-1-MODBUS-Register-Addresses_2016, "Harmonics-Sheet")
-
-        Returns:
-            list (float): armonicos del 1 al 50
+    def read_harmonics(self):
+        """ Funcion para leer los harmonicos
         """
+
         if self.metter_type == MetterTypes.G4.name:
 
-            response = None
+            register_names = ['hI1_T', 'hI2_T', 'hI3_T']
             harmonics = []
 
-            write_response = self.write_single_register(2441, modbus_code)
-            if (write_response == True):
-                response = self.read_input_registers(2442, 100)
-            if (response != None):
-                if (len(response) > 0):
-                    print(response)
+            for name in register_names:
 
-                    for i in range(len(response)):
-                        if (i == 0) or (i%2 == 0):
-                            harmonics.append(self.ParseFloat(response[i]))
-                            print(self.ParseFloat(response[i]))
+                reg = list(filter(lambda r: r['name'] == name, self._registers))
+
+                response = None
+
+                # set the reference to 'memory_block_adress' ?, this reference is stored in register 2441 ?
+                # ... ask elspec (es lo que hay -_-)
+                armonics_code_written = self.write_single_register(2441, reg['memory_block_adress'])
+
+                if (armonics_code_written == True):
+                    response = self.read_input_registers(2442, 100)
+                elif (armonics_code_written == None):
+                    print(f"Response ERROR while writing modbus code: {reg['memory_block_adress']}")
+
+                if (response != None):
+                    if (len(response) > 0):
+                        print(f"response: {response}")
+                        print(f"response lenght: {len(response)}")
+
+                        for i in range(len(response)):
+                            if (i%2 == 0):
+                                harmonics.append(self.ParseFloat(response[i]))
+                                print(self.ParseFloat(response[i]))
         
         elif self.metter_type == MetterTypes.PBB.name:
 
