@@ -385,36 +385,37 @@ class JsonModbusClient_R(ModbusClient):
 
             register_names = ['hI1_T', 'hI2_T', 'hI3_T']
             harmonics = []
+            registers_to_read = 100
+            starting_index_name = 1
 
-            for name in register_names:
-
-                reg = list(filter(lambda r: r['name'] == name, self._registers))
-
-                response = None
-
-                # set the reference to 'memory_block_adress' ?, this reference is stored in register 2441 ?
-                # ... ask elspec (es lo que hay -_-)
-                armonics_code_written = self.write_single_register(2441, reg['memory_block_adress'])
-
-                if (armonics_code_written == True):
-                    response = self.read_input_registers(2442, 100)
-                elif (armonics_code_written == None):
-                    print(f"Response ERROR while writing modbus code: {reg['memory_block_adress']}")
-
-                if (response != None):
-                    if (len(response) > 0):
-                        print(f"response: {response}")
-                        print(f"response lenght: {len(response)}")
-
-                        for i in range(len(response)):
-                            if (i%2 == 0):
-                                harmonics.append(self.ParseFloat(response[i]))
-                                print(self.ParseFloat(response[i]))
-        
         elif self.metter_type == MetterTypes.PBB.name:
 
-            return None
-            pass
+            register_names = ['hI1_0', 'hI3_0', 'hI2_0']
+            harmonics = []
+            registers_to_read = 102
+            starting_index_name = 0
+
+
+        for name in register_names:
+
+            reg_ = list(filter(lambda r: r['name'] == name, self._registers))
+
+            if len(reg_) > 1:
+                print("WARNING [len(reg_) > 1] read_harmonics()")
+
+            reg = reg_[0]
+
+            response = self.read_input_registers(reg['memory_block_adress'], registers_to_read)
+
+            if (response != None):
+                if (len(response) > 0):
+
+                    for i in range(len(response)):
+                        if (i%2 == 0):
+                            harmonics.append(RegReadResponse(name[:3]+f"_{int(starting_index_name+i/2)}", 'null', self.ParseFloat(response[i])))
+        
+        for item in harmonics:
+            print(item)
 
         return harmonics
 
