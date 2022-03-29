@@ -350,13 +350,13 @@
 	"unit": null
 	},
 	{
-	"name": "hI3_T",
-	"parameter": "PRM_CODE_AVG_10MIN_I3_SUBGROUP_HARMONICS",
+	"name": "hI1_T",
+	"parameter": "PRM_CODE_AVG_10MIN_I1_SUBGROUP_HARMONICS",
 	"description": "? ask ELSPEC",
 	"rw": "read",
 	"value_type": "? ask ELSPEC",
 	"memory_block_size": 200,
-	"memory_block_adress": 6357,
+	"memory_block_adress": 6355,
 	"unit": null
 	},
 	{
@@ -370,13 +370,13 @@
 	"unit": null
 	},
 	{
-	"name": "hI1_T",
-	"parameter": "PRM_CODE_AVG_10MIN_I1_SUBGROUP_HARMONICS",
+	"name": "hI3_T",
+	"parameter": "PRM_CODE_AVG_10MIN_I3_SUBGROUP_HARMONICS",
 	"description": "? ask ELSPEC",
 	"rw": "read",
 	"value_type": "? ask ELSPEC",
 	"memory_block_size": 200,
-	"memory_block_adress": 6355,
+	"memory_block_adress": 6357,
 	"unit": null
 	},
 	{
