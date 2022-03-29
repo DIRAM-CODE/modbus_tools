@@ -388,6 +388,33 @@ class JsonModbusClient_R(ModbusClient):
             registers_to_read = 100
             starting_index_name = 1
 
+            for name in register_names:
+
+                reg_ = list(filter(lambda r: r['name'] == name, self._registers))
+
+                if len(reg_) > 1:
+                    print("WARNING [len(reg_) > 1] read_harmonics()")
+
+                reg = reg_[0]
+
+                # set the reference to 'memory_block_adress' ?, this reference is stored in register 2441 ?
+                armonics_code_written = self.write_single_register(2441, reg['memory_block_adress'])
+
+                if (armonics_code_written == True):
+
+                    response = self.read_input_registers(2442, registers_to_read)
+
+                    if (response != None):
+                        
+                        if (len(response) > 0):
+
+                            for i in range(len(response)):
+                                if (i%2 == 0):
+                                    harmonics.append(RegReadResponse(name[:3]+f"_{int(starting_index_name+i/2)}", 'null', self.ParseFloat(response[i])))
+
+                elif (armonics_code_written == None):
+                    print(f"ERROR Response while writing modbus code: {reg['memory_block_adress']} for reg: {reg['name']} for G44XX metter.")
+                    
         elif self.metter_type == MetterTypes.PBB.name:
 
             register_names = ['hI1_0', 'hI3_0', 'hI2_0']
@@ -395,25 +422,24 @@ class JsonModbusClient_R(ModbusClient):
             registers_to_read = 102
             starting_index_name = 0
 
+            for name in register_names:
 
-        for name in register_names:
+                reg_ = list(filter(lambda r: r['name'] == name, self._registers))
 
-            reg_ = list(filter(lambda r: r['name'] == name, self._registers))
+                if len(reg_) > 1:
+                    print("WARNING [len(reg_) > 1] read_harmonics()")
 
-            if len(reg_) > 1:
-                print("WARNING [len(reg_) > 1] read_harmonics()")
+                reg = reg_[0]
 
-            reg = reg_[0]
+                response = self.read_input_registers(reg['memory_block_adress'], registers_to_read)
 
-            response = self.read_input_registers(reg['memory_block_adress'], registers_to_read)
+                if (response != None):
+                    if (len(response) > 0):
 
-            if (response != None):
-                if (len(response) > 0):
-
-                    for i in range(len(response)):
-                        if (i%2 == 0):
-                            harmonics.append(RegReadResponse(name[:3]+f"_{int(starting_index_name+i/2)}", 'null', self.ParseFloat(response[i])))
-        
+                        for i in range(len(response)):
+                            if (i%2 == 0):
+                                harmonics.append(RegReadResponse(name[:3]+f"_{int(starting_index_name+i/2)}", 'null', self.ParseFloat(response[i])))
+            
         for item in harmonics:
             print(item)
 
