@@ -356,7 +356,7 @@
 	"rw": "read",
 	"value_type": "? ask ELSPEC",
 	"memory_block_size": 200,
-	"memory_block_adress": 4925,
+	"memory_block_adress": 6357,
 	"unit": null
 	},
 	{
@@ -366,7 +366,7 @@
 	"rw": "read",
 	"value_type": "? ask ELSPEC",
 	"memory_block_size": 200,
-	"memory_block_adress": 4927,
+	"memory_block_adress": 6356,
 	"unit": null
 	},
 	{
@@ -376,7 +376,7 @@
 	"rw": "read",
 	"value_type": "? ask ELSPEC",
 	"memory_block_size": 200,
-	"memory_block_adress": 4929,
+	"memory_block_adress": 6355,
 	"unit": null
 	},
 	{
