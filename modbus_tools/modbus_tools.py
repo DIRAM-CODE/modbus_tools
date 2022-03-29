@@ -184,7 +184,7 @@ class JsonModbusClient_R(ModbusClient):
         return cls(metter_type = modbus_conf.metter_type, host = modbus_conf.host, port = modbus_conf.port, unit_id = modbus_conf.slave, auto_open = True)
 
     def check_client_response(self):
-        """ Comprueba que el cliente modbus responda.
+        """ Comprueba que el cliente modbus responda mediante la lectura de un registro.
 
         Returns:
             bool: True if response is ok , False if not
@@ -298,8 +298,8 @@ class JsonModbusClient_R(ModbusClient):
         # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
         return float_number
 
-    def sort_regs_to_read(self, regsToRead):
-        """ Simple 'bubble sort' from: https://realpython.com/sorting-algorithms-python/#the-bubble-sort-algorithm-in-python
+    def sort_regs_to_read(self, regsToRead: list[str]):
+        """ Ordena la lista de registros a leer.
 
         Args:
             array (list(str)): unsorted array
@@ -307,6 +307,8 @@ class JsonModbusClient_R(ModbusClient):
         Returns:
             list(str): sorted array
         """
+
+        # Simple 'bubble sort' from: https://realpython.com/sorting-algorithms-python/#the-bubble-sort-algorithm-in-python
 
         n = len(regsToRead)
 
@@ -351,13 +353,26 @@ class JsonModbusClient_R(ModbusClient):
 
         return regsToRead
 
-    def set_regs_to_read(self, registerToRead):
-        
+    def set_regs_to_read(self, registerToRead: list[dict]):
+        """ Guarda la lista de registros a leer.
+
+        Args:
+            registerToRead (_type_): lista de registros json a leer.
+        """
+
         sorted_regs_to_read = self.sort_regs_to_read(registerToRead)
 
         self._registers_to_read = optimize_read(sorted_regs_to_read, self._registers)
 
-    def read_registers(self, counter:int=25):
+    def read_registers(self, counter:int=25) -> list[RegReadResponse]:
+        """ Lee los registros guardados con set_regs_to_read()
+
+        Args:
+            counter (int, optional): Limite de intentos de lectura por registro. Defaults to 25.
+
+        Returns:
+            list[RegReadResponse]: Respuesta de la lectura de registros. 
+        """
 
         output = []
 
@@ -377,8 +392,11 @@ class JsonModbusClient_R(ModbusClient):
 
         return output
 
-    def read_harmonics(self):
-        """ Funcion para leer los harmonicos
+    def read_harmonics(self) -> list[RegReadResponse]:
+        """ Lee los registros de armonicos segun el tipo de medidor.
+
+        Returns:
+            list[RegReadResponse]: Respuesta de la lectura de registros. 
         """
 
         if self.metter_type == MetterTypes.G4.name:
