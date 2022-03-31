@@ -416,7 +416,7 @@ class JsonModbusClient_R(ModbusClient):
                 reg = reg_[0]
 
                 # set the reference to 'memory_block_adress' ?, this reference is stored in register 2441 ?
-                armonics_code_written = self.write_single_register(2441, reg['memory_block_adress'])
+                armonics_code_written = self.write_single_register(2441, reg['memory_block_adress'] +1 ) # need to add +1 acording to elspec
 
                 if (armonics_code_written == True):
 
