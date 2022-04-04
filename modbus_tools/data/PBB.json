@@ -7,7 +7,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 0,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "I1",
@@ -17,7 +19,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 2,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "V3N",
@@ -27,7 +31,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 4,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "I3",
@@ -37,7 +43,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 6,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "V2N",
@@ -47,7 +55,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 8,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "I2",
@@ -57,7 +67,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 10,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "V23",
@@ -67,7 +79,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 12,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "V12",
@@ -77,7 +91,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 14,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "V31",
@@ -87,7 +103,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 16,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "P1",
@@ -97,7 +115,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 18,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "P3",
@@ -107,7 +127,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 20,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "P2",
@@ -117,7 +139,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 22,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "PT",
@@ -127,7 +151,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 24,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "Q1",
@@ -137,7 +163,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 26,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "Q3",
@@ -147,7 +175,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 28,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "Q2",
@@ -157,7 +187,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 30,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "QT",
@@ -167,7 +199,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 32,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "S1",
@@ -177,7 +211,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 34,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "S3",
@@ -187,7 +223,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 36,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "S2",
@@ -197,7 +235,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 38,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "ST",
@@ -207,7 +247,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 40,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "PF1",
@@ -217,7 +259,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 42,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "PF3",
@@ -227,7 +271,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 44,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "PF2",
@@ -237,7 +283,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 46,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "PFT",
@@ -247,7 +295,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 48,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "EPinT",
@@ -257,7 +307,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 50,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "EPoutT",
@@ -267,7 +319,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 52,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "EQinT",
@@ -277,7 +331,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 54,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "EQoutT",
@@ -287,7 +343,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 56,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "1_min",
+    "refresh_rate_seconds": 60
   },
   {
     "name": "PST23",
@@ -297,7 +355,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 58,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "PST12",
@@ -307,7 +367,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 60,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "PST31",
@@ -317,7 +379,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 62,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "THDI1",
@@ -327,7 +391,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 64,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "THDI3",
@@ -337,7 +403,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 66,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "THDI2",
@@ -347,7 +415,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 68,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "V1pos",
@@ -357,7 +427,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 70,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "I1pos",
@@ -367,7 +439,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 72,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "V1neg",
@@ -377,7 +451,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 74,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "I1neg",
@@ -387,7 +463,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 76,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "V1zero",
@@ -397,7 +475,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 78,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "I1zero",
@@ -407,7 +487,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 80,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_0",
@@ -417,7 +499,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 82,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_1",
@@ -427,7 +511,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 84,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_2",
@@ -437,7 +523,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 86,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_3",
@@ -447,7 +535,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 88,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_4",
@@ -457,7 +547,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 90,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_5",
@@ -467,7 +559,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 92,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_6",
@@ -477,7 +571,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 94,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_7",
@@ -487,7 +583,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 96,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_8",
@@ -497,7 +595,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 98,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_9",
@@ -507,7 +607,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 100,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_10",
@@ -517,7 +619,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 102,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_11",
@@ -527,7 +631,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 104,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_12",
@@ -537,7 +643,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 106,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_13",
@@ -547,7 +655,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 108,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_14",
@@ -557,7 +667,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 110,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_15",
@@ -567,7 +679,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 112,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_16",
@@ -577,7 +691,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 114,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_17",
@@ -587,7 +703,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 116,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_18",
@@ -597,7 +715,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 118,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_19",
@@ -607,7 +727,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 120,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_20",
@@ -617,7 +739,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 122,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_21",
@@ -627,7 +751,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 124,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_22",
@@ -637,7 +763,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 126,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_23",
@@ -647,7 +775,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 128,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_24",
@@ -657,7 +787,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 130,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_25",
@@ -667,7 +799,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 132,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_26",
@@ -677,7 +811,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 134,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_27",
@@ -687,7 +823,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 136,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_28",
@@ -697,7 +835,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 138,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_29",
@@ -707,7 +847,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 140,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_30",
@@ -717,7 +859,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 142,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_31",
@@ -727,7 +871,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 144,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_32",
@@ -737,7 +883,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 146,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_33",
@@ -747,7 +895,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 148,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_34",
@@ -757,7 +907,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 150,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_35",
@@ -767,7 +919,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 152,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_36",
@@ -777,7 +931,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 154,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_37",
@@ -787,7 +943,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 156,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_38",
@@ -797,7 +955,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 158,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_39",
@@ -807,7 +967,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 160,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_40",
@@ -817,7 +979,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 162,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_41",
@@ -827,7 +991,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 164,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_42",
@@ -837,7 +1003,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 166,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_43",
@@ -847,7 +1015,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 168,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_44",
@@ -857,7 +1027,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 170,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_45",
@@ -867,7 +1039,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 172,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_46",
@@ -877,7 +1051,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 174,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_47",
@@ -887,7 +1063,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 176,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_48",
@@ -897,7 +1075,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 178,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_49",
@@ -907,7 +1087,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 180,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI1_50",
@@ -917,7 +1099,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 182,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_0",
@@ -927,7 +1111,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 184,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_1",
@@ -937,7 +1123,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 186,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_2",
@@ -947,7 +1135,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 188,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_3",
@@ -957,7 +1147,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 190,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_4",
@@ -967,7 +1159,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 192,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_5",
@@ -977,7 +1171,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 194,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_6",
@@ -987,7 +1183,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 196,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_7",
@@ -997,7 +1195,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 198,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_8",
@@ -1007,7 +1207,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 200,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_9",
@@ -1017,7 +1219,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 202,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_10",
@@ -1027,7 +1231,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 204,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_11",
@@ -1037,7 +1243,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 206,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_12",
@@ -1047,7 +1255,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 208,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_13",
@@ -1057,7 +1267,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 210,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_14",
@@ -1067,7 +1279,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 212,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_15",
@@ -1077,7 +1291,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 214,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_16",
@@ -1087,7 +1303,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 216,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_17",
@@ -1097,7 +1315,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 218,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_18",
@@ -1107,7 +1327,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 220,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_19",
@@ -1117,7 +1339,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 222,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_20",
@@ -1127,7 +1351,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 224,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_21",
@@ -1137,7 +1363,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 226,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_22",
@@ -1147,7 +1375,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 228,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_23",
@@ -1157,7 +1387,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 230,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_24",
@@ -1167,7 +1399,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 232,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_25",
@@ -1177,7 +1411,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 234,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_26",
@@ -1187,7 +1423,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 236,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_27",
@@ -1197,7 +1435,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 238,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_28",
@@ -1207,7 +1447,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 240,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_29",
@@ -1217,7 +1459,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 242,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_30",
@@ -1227,7 +1471,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 244,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_31",
@@ -1237,7 +1483,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 246,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_32",
@@ -1247,7 +1495,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 248,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_33",
@@ -1257,7 +1507,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 250,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_34",
@@ -1267,7 +1519,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 252,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_35",
@@ -1277,7 +1531,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 254,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_36",
@@ -1287,7 +1543,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 256,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_37",
@@ -1297,7 +1555,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 258,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_38",
@@ -1307,7 +1567,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 260,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_39",
@@ -1317,7 +1579,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 262,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_40",
@@ -1327,7 +1591,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 264,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_41",
@@ -1337,7 +1603,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 266,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_42",
@@ -1347,7 +1615,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 268,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_43",
@@ -1357,7 +1627,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 270,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_44",
@@ -1367,7 +1639,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 272,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_45",
@@ -1377,7 +1651,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 274,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_46",
@@ -1387,7 +1663,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 276,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_47",
@@ -1397,7 +1675,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 278,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_48",
@@ -1407,7 +1687,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 280,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_49",
@@ -1417,7 +1699,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 282,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI3_50",
@@ -1427,7 +1711,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 284,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_0",
@@ -1437,7 +1723,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 286,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_1",
@@ -1447,7 +1735,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 288,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_2",
@@ -1457,7 +1747,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 290,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_3",
@@ -1467,7 +1759,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 292,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_4",
@@ -1477,7 +1771,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 294,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_5",
@@ -1487,7 +1783,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 296,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_6",
@@ -1497,7 +1795,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 298,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_7",
@@ -1507,7 +1807,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 300,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_8",
@@ -1517,7 +1819,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 302,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_9",
@@ -1527,7 +1831,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 304,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_10",
@@ -1537,7 +1843,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 306,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_11",
@@ -1547,7 +1855,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 308,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_12",
@@ -1557,7 +1867,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 310,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_13",
@@ -1567,7 +1879,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 312,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_14",
@@ -1577,7 +1891,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 314,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_15",
@@ -1587,7 +1903,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 316,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_16",
@@ -1597,7 +1915,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 318,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_17",
@@ -1607,7 +1927,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 320,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_18",
@@ -1617,7 +1939,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 322,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_19",
@@ -1627,7 +1951,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 324,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_20",
@@ -1637,7 +1963,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 326,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_21",
@@ -1647,7 +1975,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 328,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_22",
@@ -1657,7 +1987,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 330,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_23",
@@ -1667,7 +1999,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 332,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_24",
@@ -1677,7 +2011,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 334,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_25",
@@ -1687,7 +2023,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 336,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_26",
@@ -1697,7 +2035,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 338,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_27",
@@ -1707,7 +2047,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 340,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_28",
@@ -1717,7 +2059,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 342,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_29",
@@ -1727,7 +2071,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 344,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_30",
@@ -1737,7 +2083,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 346,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_31",
@@ -1747,7 +2095,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 348,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_32",
@@ -1757,7 +2107,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 350,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_33",
@@ -1767,7 +2119,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 352,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_34",
@@ -1777,7 +2131,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 354,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_35",
@@ -1787,7 +2143,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 356,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_36",
@@ -1797,7 +2155,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 358,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_37",
@@ -1807,7 +2167,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 360,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_38",
@@ -1817,7 +2179,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 362,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_39",
@@ -1827,7 +2191,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 364,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_40",
@@ -1837,7 +2203,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 366,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_41",
@@ -1847,7 +2215,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 368,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_42",
@@ -1857,7 +2227,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 370,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_43",
@@ -1867,7 +2239,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 372,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_44",
@@ -1877,7 +2251,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 374,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_45",
@@ -1887,7 +2263,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 376,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_46",
@@ -1897,7 +2275,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 378,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_47",
@@ -1907,7 +2287,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 380,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_48",
@@ -1917,7 +2299,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 382,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_49",
@@ -1927,7 +2311,9 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 384,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   },
   {
     "name": "hI2_50",
@@ -1937,6 +2323,8 @@
     "value_type": "float",
     "memory_block_size": 4,
     "memory_block_adress": 386,
-    "unit": null
+    "unit": null,
+    "refresh_rate": "10_min",
+    "refresh_rate_seconds": 600
   }
 ]
