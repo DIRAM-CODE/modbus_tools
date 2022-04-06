@@ -1,39 +1,39 @@
 [
 	{
 	  "name": "PST12",
-	  "parameter": "PRM_CODE_FLICKERING_V12_PST_10SEC",
-	  "description": "PST (short term flicker)- L12 - calculated over 10 seconds",
+	  "parameter": "PRM_CODE_FLICKERING_V12_PST_10MIN",
+	  "description": "PST (short term flicker)- L12 - calculated over 10 minutes",
 	  "rw": "read",
 	  "value_type": "float",
 	  "memory_block_size": 4,
-	  "memory_block_adress": 1677,
+	  "memory_block_adress": 1689,
 	  "unit": null,
-	  "refresh_rate": "10_sec",
-	  "refresh_rate_seconds": 10
+	  "refresh_rate": "10_min",
+	  "refresh_rate_seconds": 600
 	},
 	{
 	  "name": "PST23",
-	  "parameter": "PRM_CODE_FLICKERING_V23_PST_10SEC",
-	  "description": "PST (short term flicker)- L23 - calculated over 10 seconds",
+	  "parameter": "PRM_CODE_FLICKERING_V23_PST_10MIN",
+	  "description": "PST (short term flicker)- L23 - calculated over 10 minutes",
 	  "rw": "read",
 	  "value_type": "float",
 	  "memory_block_size": 4,
-	  "memory_block_adress": 1679,
+	  "memory_block_adress": 1691,
 	  "unit": null,
-	  "refresh_rate": "10_sec",
-	  "refresh_rate_seconds": 10
+	  "refresh_rate": "10_min",
+	  "refresh_rate_seconds": 600
 	},
 	{
 	  "name": "PST31",
-	  "parameter": "PRM_CODE_FLICKERING_V31_PST_10SEC",
-	  "description": "PST (short term flicker)- L31 - calculated over 10 seconds",
+	  "parameter": "PRM_CODE_FLICKERING_V31_PST_10MIN",
+	  "description": "PST (short term flicker)- L31 - calculated over 10 minutes",
 	  "rw": "read",
 	  "value_type": "float",
 	  "memory_block_size": 4,
-	  "memory_block_adress": 1681,
+	  "memory_block_adress": 1693,
 	  "unit": null,
-	  "refresh_rate": "10_sec",
-	  "refresh_rate_seconds": 10
+	  "refresh_rate": "10_min",
+	  "refresh_rate_seconds": 600
 	},
 	{
 	  "name": "EPinT",
@@ -44,8 +44,8 @@
 	  "memory_block_size": 8,
 	  "memory_block_adress": 1947,
 	  "unit": null,
-	  "refresh_rate": null,
-	  "refresh_rate_seconds": null
+	  "refresh_rate": "1_min",
+	  "refresh_rate_seconds": 60
 	},
 	{
 	  "name": "EPoutT",
@@ -56,8 +56,8 @@
 	  "memory_block_size": 8,
 	  "memory_block_adress": 1951,
 	  "unit": null,
-	  "refresh_rate": null,
-	  "refresh_rate_seconds": null
+	  "refresh_rate": "1_min",
+	  "refresh_rate_seconds": 60
 	},
 	{
 	  "name": "EQinT",
@@ -68,8 +68,8 @@
 	  "memory_block_size": 8,
 	  "memory_block_adress": 1963,
 	  "unit": null,
-	  "refresh_rate": null,
-	  "refresh_rate_seconds": null
+	  "refresh_rate": "1_min",
+	  "refresh_rate_seconds": 60
 	},
 	{
 	  "name": "EQoutT",
@@ -80,8 +80,8 @@
 	  "memory_block_size": 8,
 	  "memory_block_adress": 1967,
 	  "unit": null,
-	  "refresh_rate": null,
-	  "refresh_rate_seconds": null
+	  "refresh_rate": "1_min",
+	  "refresh_rate_seconds": 60
 	},
 	{
 	  "name": "P1",
