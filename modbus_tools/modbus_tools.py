@@ -298,7 +298,7 @@ class JsonModbusClient_R(ModbusClient):
         # print(f"[modbus_tcp.py]: ParseFloat(): {float_number}")
         return float_number
 
-    def sort_regs_to_read(self, regsToRead: list[str]):
+    def sort_regs_to_read(self, regsToRead: List[str]):
         """ Ordena la lista de registros a leer.
 
         Args:
@@ -353,7 +353,7 @@ class JsonModbusClient_R(ModbusClient):
 
         return regsToRead
 
-    def set_regs_to_read(self, registerToRead: list[dict]):
+    def set_regs_to_read(self, registerToRead: List[dict]):
         """ Guarda la lista de registros a leer.
 
         Args:
@@ -364,14 +364,14 @@ class JsonModbusClient_R(ModbusClient):
 
         self._registers_to_read = optimize_read(sorted_regs_to_read, self._registers)
 
-    def read_registers(self, counter:int=25) -> list[RegReadResponse]:
+    def read_registers(self, counter:int=25) -> List[RegReadResponse]:
         """ Lee los registros guardados con set_regs_to_read()
 
         Args:
             counter (int, optional): Limite de intentos de lectura por registro. Defaults to 25.
 
         Returns:
-            list[RegReadResponse]: Respuesta de la lectura de registros. 
+            List[RegReadResponse]: Respuesta de la lectura de registros. 
         """
 
         output = []
@@ -392,11 +392,11 @@ class JsonModbusClient_R(ModbusClient):
 
         return output
 
-    def read_harmonics(self) -> list[RegReadResponse]:
+    def read_harmonics(self) -> List[RegReadResponse]:
         """ Lee los registros de armonicos segun el tipo de medidor.
 
         Returns:
-            list[RegReadResponse]: Respuesta de la lectura de registros. 
+            List[RegReadResponse]: Respuesta de la lectura de registros. 
         """
 
         if self.metter_type == MetterTypes.G4.name:
@@ -494,7 +494,7 @@ class JsonModbusClient_RW(JsonModbusClient_R):
 
         return write_resp
 
-def optimize_read(registers_name: list[str], all_registers: list[dict], max_step: int = 30) -> list[dict]:
+def optimize_read(registers_name: List[str], all_registers: List[dict], max_step: int = 30) -> List[dict]:
     """Optimiza la lectura de registros permitiendo un maximo de consultas seguidas
 
     Args:
