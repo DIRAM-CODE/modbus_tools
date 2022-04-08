@@ -463,6 +463,78 @@ class JsonModbusClient_R(ModbusClient):
 
         return harmonics
 
+    def read_harmonics_per_phase(self, phase:int=1) -> List[RegReadResponse]:
+        """ Lee armonicos por fase
+
+        Args:
+            phase (int, optional): Fase a leer: 1, 2 o 3. Defaults to 1.
+
+        Returns:
+            List[RegReadResponse]: Harmonicos de la fase.
+        """
+
+        harmonics = []
+
+        if self.metter_type == MetterTypes.G4.name:
+            register_names = ['hI1_T', 'hI2_T', 'hI3_T']
+            registers_to_read = 100
+            starting_index_name = 1
+
+            name = register_names[phase-1]
+
+            reg_ = list(filter(lambda r: r['name'] == name, self._registers))
+
+            if len(reg_) > 1:
+                print("WARNING [len(reg_) > 1] read_harmonics()")
+
+            reg = reg_[0]
+
+            # set the reference to 'memory_block_adress' ?, this reference is stored in register 2441 ?
+            armonics_code_written = self.write_single_register(2441, reg['memory_block_adress'] +1 ) # need to add +1 acording to elspec
+
+            if (armonics_code_written == True):
+
+                response = self.read_input_registers(2442, registers_to_read)
+
+                if (response != None):
+                    
+                    if (len(response) > 0):
+
+                        for i in range(len(response)):
+                            if (i%2 == 0):
+                                harmonics.append(RegReadResponse(name[:3]+f"_{int(starting_index_name+i/2)}", 'null', self.ParseFloat(response[i])))
+
+            elif (armonics_code_written == None):
+                print(f"ERROR Response while writing modbus code: {reg['memory_block_adress']} for reg: {reg['name']} for G44XX metter.")
+            
+        elif self.metter_type == MetterTypes.PBB.name:
+            register_names = ['hI1_0', 'hI3_0', 'hI2_0']
+            registers_to_read = 102
+            starting_index_name = 0
+    
+            name = register_names[phase-1]
+
+            reg_ = list(filter(lambda r: r['name'] == name, self._registers))
+
+            if len(reg_) > 1:
+                print("WARNING [len(reg_) > 1] read_harmonics()")
+
+            reg = reg_[0]
+
+            response = self.read_input_registers(reg['memory_block_adress'], registers_to_read)
+
+            if (response != None):
+                if (len(response) > 0):
+
+                    for i in range(len(response)):
+                        if (i%2 == 0):
+                            harmonics.append(RegReadResponse(name[:3]+f"_{int(starting_index_name+i/2)}", 'null', self.ParseFloat(response[i])))
+
+        for item in harmonics:
+            print(item)
+
+        return harmonics
+
 class JsonModbusClient_RW(JsonModbusClient_R):
     """Clase que hereda de 'JsonModbusClient_R', añade escritura de registros a partir de 'json'
     """
