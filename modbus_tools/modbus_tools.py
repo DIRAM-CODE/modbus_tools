@@ -508,7 +508,7 @@ class JsonModbusClient_R(ModbusClient):
                 print(f"ERROR Response while writing modbus code: {reg['memory_block_adress']} for reg: {reg['name']} for G44XX metter.")
             
         elif self.metter_type == MetterTypes.PBB.name:
-            register_names = ['hI1_0', 'hI3_0', 'hI2_0']
+            register_names = ['hI1_0', 'hI2_0', 'hI3_0']
             registers_to_read = 102
             starting_index_name = 0
     
