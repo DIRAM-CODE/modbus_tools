@@ -498,7 +498,7 @@
 	  "rw": "read",
 	  "value_type": "? ask ELSPEC",
 	  "memory_block_size": 200,
-	  "memory_block_adress": 6352,
+	  "memory_block_adress": 6355,
 	  "unit": null,
 	  "refresh_rate": "3_sec",
 	  "refresh_rate_seconds": 3
@@ -510,7 +510,7 @@
 	  "rw": "read",
 	  "value_type": "? ask ELSPEC",
 	  "memory_block_size": 200,
-	  "memory_block_adress": 6353,
+	  "memory_block_adress": 6356,
 	  "unit": null,
 	  "refresh_rate": "3_sec",
 	  "refresh_rate_seconds": 3
@@ -522,7 +522,7 @@
 	  "rw": "read",
 	  "value_type": "? ask ELSPEC",
 	  "memory_block_size": 200,
-	  "memory_block_adress": 6354,
+	  "memory_block_adress": 6357,
 	  "unit": null,
 	  "refresh_rate": "3_sec",
 	  "refresh_rate_seconds": 3
